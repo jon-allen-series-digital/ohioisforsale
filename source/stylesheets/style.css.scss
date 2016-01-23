@@ -1,0 +1,175 @@
+@import "reset";
+
+$primary-color: #efeee6;
+$font-stack:    'Varela', sans-serif;
+
+//* {background-color: rgba(255,0,0,0.3);}
+
+body {
+	background-color: #fff;
+	font: 100% $font-stack;
+}
+.bg { 
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: url('../images/main-bkg.png') no-repeat top 80px center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.page-wrap {
+	max-width: 72em;
+	margin: 0 auto;
+}
+.row {
+	margin: 2em 0;
+	display: block;
+}
+.page-view {
+	text-align: center;
+}
+.page-view img {
+	width: 100%;
+	max-width: 600px;
+}
+#header {
+	// background-color: $primary-color;
+	height: 80px;
+	border-bottom: 1px solid #ddd;
+}
+#logo {
+	float: left;
+	background: url('../images/ohio_label.png') top center no-repeat;
+	background-size: contain;
+	height: 24px;
+	width: 370px;
+	margin: 28px 5%;
+}
+#logo.vl {
+	background: #fff;
+	margin-top: 24px;
+}
+#logo h1 {
+	font-size: 36px;
+	color: #ddd;
+	line-height: 36px;
+}
+nav {
+	float: right;
+	margin-right: 5%;
+}
+nav li {
+	list-style: none;
+	height: 24px;
+	margin: 28px 0 28px 36px;
+	display: inline;
+	float: left;
+}
+nav li a {
+	color: #515151;
+	text-decoration: none;
+}
+nav li a:hover {
+	text-decoration: underline;
+}
+nav#dropdown {
+	background-color: #fff;
+	z-index: 100;
+	position: absolute;
+	right: 0;
+	margin: 80px 0;
+	display: none;
+}
+nav#dropdown li {
+	margin: 0;
+	padding: 12px 24px;
+	display: block;
+	float: none;
+	background-color: #f4f4f4;
+}
+nav#dropdown li:hover {
+	background-color: #e8e8e8;
+}
+.chapter-panel {
+	width: 600px;
+	height: 120px;
+	border: 4px solid #000;
+	margin: 2em auto;
+	display: block;
+	background-color: #000;
+}
+.section {
+	height: 120px;
+	min-width: 120px;
+	display: inline;
+	float: left;
+}
+.section label {
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	margin: 42px auto;
+	text-align: center;
+	display: block;
+}
+.buttons {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 6px 100px 6px;
+}
+.button {
+	display: inline;
+}
+.left {float: left;}
+.right {float: right;}
+.clear {
+	clear: both;
+}
+.mail-box {
+	padding: 24px;
+	border: 1px solid #ddd;
+	margin: 10% auto;
+	width: 200px;
+	text-align: center;
+}
+
+@media only screen and (max-width : 960px) {
+	/** {background-color: rgba(255,0,0,0.3);}*/
+	// #logo {margin: 28px;}
+	#header nav ul li {display: none;}
+	#header nav#dropdown ul li {display: block;}
+	#hamburger {
+	    cursor: pointer;
+	    display: inline;
+	    float: right;
+	    height: 1.5em;
+	    padding: 28px;
+	    width: 1.5em;
+	}
+	#hamburger:hover {
+		background-color: #f4f4f4;
+	}
+	#hamburger div {
+	    background-color: #000;
+	    border: 1px solid #000;
+	    // border-radius: 0.125em;
+	    height: 0.125em;
+	    margin-top: 0.1875em;
+	    width: 90%;
+	}
+}
+@media only screen and (max-width : 520px) {
+	#logo {
+		width: 220px;
+	}
+	.chapter-panel {
+		width: 300px;
+		height: 220px;
+	}
+	.section img {
+		max-width: 300px;
+	}
+}

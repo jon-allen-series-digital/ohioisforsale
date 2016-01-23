@@ -1,0 +1,24 @@
+---
+title: 'Chapter 2 | '
+---
+
+<div class='page-wrap'>
+	<div class='row'>
+
+      <div class='page-view ohio-two'>
+      <% link_to next_page + '.html' do %>
+      <%= image_tag '../images/pages/chapter-two/ohio2_gray' + page_number + '.jpg' %>
+      <% end %>
+    </div>  
+  <div class="buttons">
+    <div class="button left">
+    <%= link_to 'Previous Page', prev_page + '.html' %>
+    </div>
+    <div class="button right">  
+      <%= link_to 'Next Page', next_page + '.html' %>
+    </div>  
+  </div> 
+  <div class="preload"><%= link_to '', next_page %></div>
+  </div> 
+</div>      
+

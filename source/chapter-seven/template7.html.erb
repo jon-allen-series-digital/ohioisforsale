@@ -1,0 +1,24 @@
+---
+title: 'Chapter 7 | '
+---
+
+<div class='page-wrap'>
+	<div class='row'>
+
+      <div class='page-view ohio-seven'>
+      <% link_to next_page + '.html' do %>
+      <%= image_tag '../images/pages/chapter-seven/ohio_7_' + page_number + '_gray.jpg' %>
+      <% end %>
+    </div>  
+  <div class="buttons">
+    <div class="button left">
+    <%= link_to 'Previous Page', prev_page + '.html' %>
+    </div>
+    <div class="button right">  
+      <%= link_to 'Next Page', next_page + '.html' %>
+    </div>  
+  </div> 
+  <div class="preload"><%= link_to '', next_page %></div>
+  </div> 
+</div>      
+
