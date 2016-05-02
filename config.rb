@@ -218,7 +218,7 @@ int_array.each do |number|
   proxy "chapter-six/#{a}.html", "chapter-six/template6.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
 
-int_array = Array.new(62) { |e| e = e + 1 }
+int_array = Array.new(68) { |e| e = e + 1 }
 
 int_array.each do |number| 
   a = number
@@ -233,7 +233,7 @@ int_array.each do |number|
    if a == "01"
     c = "../chapterindex"
   end 
-  if a == "62"
+  if a == "68"
     b = "../chapterindex"
   end
   proxy "chapter-seven/#{a}.html", "chapter-seven/template7.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true

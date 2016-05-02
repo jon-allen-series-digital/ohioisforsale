@@ -163,7 +163,7 @@ nav#dropdown li:hover {
 }
 @media only screen and (max-width : 520px) {
 	#logo {
-		width: 220px;
+		max-width: 200px;
 	}
 	.chapter-panel {
 		width: 300px;
