@@ -42,7 +42,7 @@ else if ($(".page-view").hasClass("ohio-six")) {
 	$(["/images/pages/chapter-six/ohio_6_" + imageLoad + "_grey.jpg"]).preload();
 }
 else if ($(".page-view").hasClass("ohio-seven")) {
-	$(["/images/pages/chapter-seven/ohio_7_" + imageLoad + "_grey.jpg"]).preload();
+	$(["/images/pages/chapter-seven/ohio_7_" + imageLoad + "_gray.jpg"]).preload();
 }
 
 
