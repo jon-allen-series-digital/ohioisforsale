@@ -92,6 +92,8 @@ set :relative_links, true
 
 page "/vacationland/*", :layout => "vacationland"
 
+# Chapter One
+
 int_array = Array.new(54) { |e| e = e + 1 }
 
 int_array.each do |number| 
@@ -112,6 +114,8 @@ int_array.each do |number|
   end 
   proxy "chapter-one/#{a}.html", "chapter-one/template1.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
+
+# Chapter Two
 
 int_array = Array.new(50) { |e| e = e + 1 }
 
@@ -134,6 +138,8 @@ int_array.each do |number|
   proxy "chapter-two/#{a}.html", "chapter-two/template2.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
 
+# Chapter Three
+
 int_array = Array.new(37) { |e| e = e + 1 }
 
 int_array.each do |number| 
@@ -154,6 +160,8 @@ int_array.each do |number|
   end
   proxy "chapter-three/#{a}.html", "chapter-three/template3.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
+
+# Chapter Four
 
 int_array = Array.new(36) { |e| e = e + 1 }
 
@@ -176,6 +184,8 @@ int_array.each do |number|
   proxy "chapter-four/#{a}.html", "chapter-four/template4.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
 
+# Chapter Five
+
 int_array = Array.new(83) { |e| e = e + 1 }
 
 int_array.each do |number| 
@@ -196,6 +206,8 @@ int_array.each do |number|
   end
   proxy "chapter-five/#{a}.html", "chapter-five/template5.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
+
+# Chapter Six
 
 int_array = Array.new(49) { |e| e = e + 1 }
 
@@ -218,6 +230,8 @@ int_array.each do |number|
   proxy "chapter-six/#{a}.html", "chapter-six/template6.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
 
+# Chapter Seven
+
 int_array = Array.new(68) { |e| e = e + 1 }
 
 int_array.each do |number| 
@@ -238,6 +252,31 @@ int_array.each do |number|
   end
   proxy "chapter-seven/#{a}.html", "chapter-seven/template7.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
+
+# Chapter Eight
+
+int_array = Array.new(74) { |e| e = e + 1 }
+
+int_array.each do |number| 
+  a = number
+  b = number += 1 
+  c = a - 1
+  a = a.to_s
+  b = b.to_s
+  c = c.to_s
+  a = format('%02d', a)
+  b = format('%02d', b)
+  c = format('%02d', c)
+   if a == "01"
+    c = "../chapterindex"
+  end 
+  if a == "74"
+    b = "../chapterindex"
+  end
+  proxy "chapter-eight/#{a}.html", "chapter-eight/template8.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
+end
+
+# Vacationland
 
 int_array = Array.new(67) { |e| e = e + 1 }
 
