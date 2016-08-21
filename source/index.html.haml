@@ -5,24 +5,39 @@ title: ''
 .bg-wrap
 	.bg-inner-wrap
 		= link_to 'chapter-one/index.html' do
-			= image_tag '/images/main-bkg.png', :class=>'bg-img'
+			= image_tag '/images/landscape.jpg', :class=>'bg-img'
 .clear
 %hr
 .page-wrap
 	.column.left.column-outer
-		.column.left
-			= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'_blank' do
+		= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'_blank' do
+			.column.left.column-inner
 				= image_tag '/images/cover.jpg', :class=>'img-resize'
-		.column.right
-			.text-wrap
-				%h2.strong Buy the book
-				%p Issues 1 - 5 collected into one big book, published by Alternative Comics.	
+			.column.right.column-inner
+				.text-wrap
+					%h2.strong Buy the book
+					%p Issues 1 - 5 collected into one big book, published by Alternative Comics.	
 	.column.right.column-outer
-		.column.left
-			= link_to 'chapter-nine/index.html' do
+		= link_to 'chapter-nine/index.html' do
+			.column.left.column-inner
 				= image_tag '/images/cover-large-9.jpg', :class=>'img-resize'
-		.column.right
-			.text-wrap
-				%h2.strong Read the latest issue
-				%p Patrick and Julian go on an adventure to try to get Julian’s rent paid.	
+			.column.right.column-inner
+				.text-wrap
+					%h2.strong Read the latest issue
+					%p Patrick and Julian go on an adventure to try to get Julian’s rent paid.
+	/ .column.left.column-outer
+	/ 	= link_to 'chapter-one/index.html' do
+	/ 		.column.left
+	/ 			.text-wrap
+	/ 				%h2.strong.right Read from the beginning
+	/ 		.column.right
+	/ 			= image_tag '/images/cover-large-1.jpg', :class=>'img-resize'	
+	/ .column.right.column-outer
+	/ 	= link_to 'http://ohioisforsale.bigcartel.com/', :target=>'_blank' do
+	/ 		.column.left
+	/ 			.text-wrap
+	/ 				%h2.strong.right Buy the comics
+	/ 		.column.right
+	/ 			= image_tag '/images/cover-large-7.jpg', :class=>'img-resize'
+					
 .clear				

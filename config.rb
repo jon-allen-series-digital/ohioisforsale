@@ -341,5 +341,5 @@ activate :deploy do |deploy|
   deploy.port = 22
   deploy.user = "toor"
   deploy.password = "yXK9NaqL6NSU"
-  deploy.flags = "-avz --delete --no-p"
+  deploy.flags = "-avz --del"
 end
