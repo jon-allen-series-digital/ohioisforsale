@@ -335,10 +335,11 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :rsync
+  deploy.method = :sftp
   deploy.host = "206.191.128.209"
-  deploy.path = "/home/jonallen/ohioisforsale/"
+  deploy.path = "/home/jonallen/ohioisforsale"
+  deploy.port = 22
   deploy.user = "toor"
-  deploy.password = "C0nundrumSph1nx"
+  deploy.password = "yXK9NaqL6NSU"
   deploy.flags = "-avz --delete --no-p"
 end
