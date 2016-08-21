@@ -90,8 +90,6 @@ set :images_dir, 'images'
 
 set :relative_links, true
 
-page "/vacationland/*", :layout => "vacationland"
-
 page "/chapter-one/*", :layout => "layout-page"
 page "/chapter-two/*", :layout => "layout-page"
 page "/chapter-three/*", :layout => "layout-page"

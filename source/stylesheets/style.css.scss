@@ -3,6 +3,7 @@
 $primary-color: #efeee6;
 $font-stack:    'Helvetica', sans-serif;
 $header-height: 60px;
+$page-margin: 1.5rem;
 
 @mixin transition {
 	-webkit-transition: all .25s ease-out;
@@ -25,7 +26,7 @@ body {
 	margin-top: 60px;
 }
 .bg-inner-wrap {
-	padding: 2rem;
+	padding: $page-margin;
 }
 .bg-img {
 	display: block;
@@ -68,7 +69,7 @@ a {
 }
 .page-wrap {
 	display: block;
-	padding: 0 2rem;
+	padding: 0 $page-margin;
 	margin: 0 auto;
 }
 .page-wrap img {
@@ -107,7 +108,7 @@ a {
 	background-color: #222;
 	display: inline;
 	float: left;
-	// padding: 2rem;
+	// padding: $page-margin;
 	margin-top: 60px;
 }
 #sidebar h2 {
@@ -184,15 +185,15 @@ nav li a:hover {
 	z-index: 100;
 	position: absolute;
 	right: 0;
-	width: 300px;
-	margin-right: -300px;
+	width: 250px;
+	margin-right: -250px;
 	@include transition; 	
 }
 #offcanvas.active {
 	margin-right: 0px;
 }
 .inner-wrap.active {
-	margin-left: -300px;
+	margin-left: -250px;
 }
 #offcanvas li {
 	margin: 0 0 -1px 0;
@@ -301,7 +302,7 @@ h2.strong {
 }
 footer {
 	display: block;
-	padding: 1rem 2rem;
+	padding: 1rem $page-margin;
 	border-top: 1px solid #ddd;
 }
 @media only screen and (max-width : 960px) {
@@ -338,8 +339,10 @@ footer {
 	}	
 }
 @media only screen and (max-width : 520px) {
-	#logo {
-		max-width: 200px;
+	#logo img {
+		max-width: 217px;
+		max-height: 17px;
+		margin-top: ($header-height - 17px) / 2;
 	}
 	.chapter-panel {
 		width: 300px;
