@@ -2,6 +2,27 @@
 title: ''
 ---
 
-= link_to 'chapterindex' do
-	.bg
-
+.bg-wrap
+	.bg-inner-wrap
+		= link_to 'chapter-one/index.html' do
+			= image_tag '/images/main-bkg.png', :class=>'bg-img'
+.clear
+%hr
+.page-wrap
+	.column.left.column-outer
+		.column.left
+			= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'_blank' do
+				= image_tag '/images/cover.jpg', :class=>'img-resize'
+		.column.right
+			.text-wrap
+				%h2.strong Buy the book
+				%p Issues 1 - 5 collected into one big book, published by Alternative Comics.	
+	.column.right.column-outer
+		.column.left
+			= link_to 'chapter-nine/index.html' do
+				= image_tag '/images/cover-large-9.jpg', :class=>'img-resize'
+		.column.right
+			.text-wrap
+				%h2.strong Read the latest issue
+				%p Patrick and Julian go on an adventure to try to get Julian’s rent paid.	
+.clear				

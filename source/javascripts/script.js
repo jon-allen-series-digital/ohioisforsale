@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
 $("#hamburger").click(function(){
-	$("#dropdown").toggle();
-	$(this).css("background-color","#f4f4f4");
-
+	$('.inner-wrap, #offcanvas').toggleClass('active');
+});
+$(window).resize(function() {
+	$('.inner-wrap, #offcanvas').removeClass('active');
 });
 
 $.fn.preload = function() {
@@ -13,6 +14,8 @@ $.fn.preload = function() {
 }
 var imageLoad = $('.preload a').attr('href');
 imageLoad = imageLoad.toString();
+
+$(["/images/logo.png"]).preload();
 
 if ($(".page-view").hasClass("vl-one")) {
 	$(["/images/pages/vacationland-one/vacationland_" + imageLoad + "_gray.jpg"]).preload();
@@ -46,6 +49,9 @@ else if ($(".page-view").hasClass("ohio-seven")) {
 }
 else if ($(".page-view").hasClass("ohio-eight")) {
 	$(["/images/pages/chapter-eight/ohio_8_" + imageLoad + "_gray.jpg"]).preload();
+}
+else if ($(".page-view").hasClass("ohio-nine")) {
+	$(["/images/pages/chapter-nine/ohio_9_" + imageLoad + "_gray.jpg"]).preload();
 }
 
 });

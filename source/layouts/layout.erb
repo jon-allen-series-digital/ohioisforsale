@@ -5,7 +5,6 @@
     
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
         
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title + "Ohio Is For Sale" %></title>
@@ -14,44 +13,67 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <%= favicon_tag '../images/favicon.ico' %> 
+    <%= favicon_tag '/images/favicon.ico' %> 
     <%= stylesheet_link_tag "style" %>
-    <%= javascript_include_tag  "all" %>
+    
   </head>
   
   <body class="<%= page_classes %>">
-    <div id="header">
-      <div class="page-wrap">
-        <% link_to '../../index.html' do %>
-          <div id="logo"></div>
-        <% end %>  
-        <nav>
-          <ul>
-            <li><%= link_to 'Chapter Index','../chapterindex.html' %></li>
-            <li><%= link_to 'Contact','../contact.html' %></li>
-            <li><%= link_to 'Blog', 'http://expertlawncare.tumblr.com/', :target =>'_blank' %></li>
-            <li><%= link_to 'Shop', 'http://ohioisforsale.bigcartel.com/', :target =>'_blank' %></li>
+    <div class="outer-wrap">
+      <div id="offcanvas">
+        <ul>
+          <li><%= link_to 'Read','/chapter-one/index.html' %></li>
+          <li><hr></li>
+          <li class="secondary"><%= link_to 'One', '/chapter-one/index.html' %></li>
+          <li class="secondary"><%= link_to 'Two', '/chapter-two/index.html' %></li>
+          <li class="secondary"><%= link_to 'Three', '/chapter-three/index.html' %></li>
+          <li class="secondary"><%= link_to 'Four', '/chapter-four/index.html' %></li>
+          <li class="secondary"><%= link_to 'Five', '/chapter-five/index.html' %></li>
+          <li class="secondary"><%= link_to 'Six', '/chapter-six/index.html' %></li>
+          <li class="secondary"><%= link_to 'Seven', '/chapter-seven/index.html' %></li>
+          <li class="secondary"><%= link_to 'Eight', '/chapter-eight/index.html' %></li>
+          <li class="secondary"><%= link_to 'Nine', '/chapter-nine/index.html' %></li>
+          <li><hr></li>
+          <li><%= link_to 'Shop', 'http://ohioisforsale.bigcartel.com/', :target =>'_blank' %></li>
+          <li><hr></li>
+          <li><%= link_to 'Contact', 'contact.html' %></li>
+          <li><hr></li>
+          <li><%= link_to 'Expert Lawn Care', 'http://expertlawncare.tumblr.com/', :target =>'_blank' %></li>
+        </ul>
+      </div>      
+      <div class="inner-wrap">    
+        <div id="header">
+          <div class="page-wrap">
+            <% link_to '/index.html' do %>
+              <div id="logo">
+                <%= image_tag '/images/logo.png' %>
+              </div>
+            <% end %>  
+            <nav>
+              <ul>
+                <li><%= link_to 'Read','/chapter-one/index.html' %></li>
+                <li><%= link_to 'Shop', 'http://ohioisforsale.bigcartel.com/', :target =>'_blank' %></li>
+                <li><%= link_to 'Contact', '/contact.html' %></li>
+                <li><%= link_to 'Expert Lawn Care', 'http://expertlawncare.tumblr.com/', :target =>'_blank' %></li>
+              </ul>
+            </nav>
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
 
-          </ul>
-        </nav>
-        <div id="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
+          </div>  
+         </div> 
+
+          <div id="main" role="main">
+            <%= yield %>
+          </div>
+<!--           <footer id="footer">
+            <%= mail_to 'jonathan@jon-allen.us' %>
+          </footer> -->
         </div>
-        <nav id="dropdown">
-          <ul>
-            <li><%= link_to 'Chapter Index','../chapterindex.html' %></li>
-            <li><%= link_to 'Contact','../contact.html' %></li>
-            <li><%= link_to 'Blog', 'http://expertlawncare.tumblr.com/', :target =>'_blank' %></li>
-            <li><%= link_to 'Shop', 'http://ohioisforsale.bigcartel.com/', :target =>'_blank' %></li>
-          </ul>
-        </nav>
       </div>  
-     </div> 
-
-      <div id="main" role="main">
-      <%= yield %>
-    </div>
+      <%= javascript_include_tag  "all" %>  
   </body>
 </html>
