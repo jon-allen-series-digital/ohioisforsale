@@ -75,6 +75,8 @@ GEM
       middleman-core (>= 3.2)
       net-sftp
       ptools
+    middleman-sitemap (0.0.13)
+      middleman-core (>= 3.2.2)
     middleman-sprockets (3.4.2)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
@@ -129,6 +131,7 @@ DEPENDENCIES
   middleman (~> 3.3.5)
   middleman-blog (~> 3.5.3)
   middleman-deploy (~> 1.0)
+  middleman-sitemap
 
 BUNDLED WITH
-   1.12.5
+   1.13.6

@@ -332,6 +332,8 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+activate :sitemap
+
 activate :deploy do |deploy|
   deploy.method = :sftp
   deploy.host = "206.191.128.209"
