@@ -99,6 +99,7 @@ page "/chapter-six/*", :layout => "layout-page"
 page "/chapter-seven/*", :layout => "layout-page"
 page "/chapter-eight/*", :layout => "layout-page"
 page "/chapter-nine/*", :layout => "layout-page"
+page "/chapter-ten/*", :layout => "layout-page"
 
 
 # Chapter One
@@ -308,7 +309,28 @@ int_array.each do |number|
   proxy "chapter-nine/#{a}.html", "chapter-nine/template9.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
 
+# Chapter Ten
 
+int_array = Array.new(107) { |e| e = e + 1 }
+
+int_array.each do |number| 
+  a = number
+  b = number += 1 
+  c = a - 1
+  a = a.to_s
+  b = b.to_s
+  c = c.to_s
+  a = format('%02d', a)
+  b = format('%02d', b)
+  c = format('%02d', c)
+   if a == "01"
+    c = "/chapter-ten/index"
+  end 
+  if a == "107"
+    b = "/chapter-ten/index"
+  end
+  proxy "chapter-ten/#{a}.html", "chapter-ten/template10.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
+end
 
 # def add(number, 1)
 #   a_number + another_number
