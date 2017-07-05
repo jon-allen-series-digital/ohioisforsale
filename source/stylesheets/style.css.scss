@@ -48,7 +48,7 @@ body {
 .bg-wrap {
 	display: block;
 	width: 100%;
-	max-width: 100vw;	
+	max-width: 100%;	
 	margin-top: 60px;
 	position: relative;
 }
@@ -109,7 +109,7 @@ a {
 	overflow-x: hidden;
 }
 .inner-wrap {
-	width: 100vw;
+	width: 100%;
 	min-height: 100vh;
 	overflow-y: hidden;
 	@include transition; 	
@@ -138,12 +138,17 @@ a {
 	height: 60px;
 }
 #main {
-
 	// overflow-y: hidden;
+}
+.chapter-index {
+	width: 1056px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .page-view {
 	text-align: center;
 	width: 100%;
+	
 	// max-width: 600px;
 	margin: 60px auto 0;
 	display: inline-block;
@@ -241,7 +246,8 @@ nav li a:hover {
 }
 #offcanvas {
 	background-color: #222;
-	height: 100%;
+	height: auto;
+	min-height: 100%;
 	z-index: 100;
 	position: absolute;
 	right: 0;
@@ -405,7 +411,20 @@ footer {
 		padding-bottom: 1rem;
 	}	
 }
-@media only screen and (max-width : 520px) {
+@media only screen and (max-width : 1055px) {
+	.chapter-index {
+		max-width: 792px;
+	}
+}
+@media only screen and (max-width : 791px) {
+	.chapter-index {
+		max-width: 528px;
+	}
+}
+@media only screen and (max-width : 527px) {
+	.chapter-index {
+		max-width: 288px;
+	}
 	#logo img {
 		max-width: 217px;
 		max-height: 17px;
@@ -418,6 +437,10 @@ footer {
 		display: inline-block;
 		float: none;
 		margin: $page-margin / 2 auto;
+	}
+	.inner-wrap, .outer-wrap {
+		height: auto;
+		min-height: auto;
 	}
 	.bg-inner-wrap {
 		padding: 0;
