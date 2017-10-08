@@ -12,21 +12,24 @@ title: ''
 %hr
 .page-wrap
 	.column.left.column-outer
-		= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'_blank' do
-			.column.left.column-inner
+		.column.left.column-inner
+			= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'_blank' do
 				= image_tag '/images/cover.jpg', :class=>'img-resize'
-			.column.right.column-inner
-				.text-wrap
-					%h2.strong Buy the book
-					%p Issues 1 - 5 collected into one big book, published by Alternative Comics.	
+		.column.right.column-inner
+			.text-wrap
+				%h2.strong Buy the book
+				%p Issues 1 - 5 collected into one big book, published by Alternative Comics.	
 	.column.right.column-outer
-		= link_to 'chapter-ten/index.html' do
-			.column.left.column-inner
-				= image_tag '/images/cover-large-10.png', :class=>'img-resize'
-			.column.right.column-inner
-				.text-wrap
-					%h2.strong Read the latest issue
-					%p Camden and Jeremiah set out to score some weed, but wind up in trouble with some local goons.
+		
+		.column.left.column-inner
+			= link_to 'chapter-eleven/index.html' do
+				= image_tag '/images/cover-large-11.png', :class=>'img-resize'
+		.column.right.column-inner
+			.text-wrap
+				%h2.strong Read the latest issue
+				%p 
+					Number eleven. Another installment in the ongoing story about this dumb gay kid and his problems, which starts in 
+					= link_to 'chapter six.', 'chapter-six/index.html'
 
 					
 .clear				
