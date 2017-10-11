@@ -121,7 +121,7 @@ int_array.each do |number|
     c = "/chapter-one/index"
   end 
   if a == "54"
-    b = "/chapter-one/index"
+    b = "/chapterindex"
   end 
   proxy "chapter-one/#{a}.html", "chapter-one/template1.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -144,7 +144,7 @@ int_array.each do |number|
     c = "/chapter-two/index"
   end 
   if a == "50"
-    b = "/chapter-two/index"
+    b = "/chapterindex"
   end
   proxy "chapter-two/#{a}.html", "chapter-two/template2.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -167,7 +167,7 @@ int_array.each do |number|
     c = "/chapter-three/index"
   end 
   if a == "37"
-    b = "/chapter-three/index"
+    b = "/chapterindex"
   end
   proxy "chapter-three/#{a}.html", "chapter-three/template3.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -190,7 +190,7 @@ int_array.each do |number|
     c = "/chapter-four/index"
   end 
   if a == "36"
-    b = "/chapter-four/index"
+    b = "/chapterindex"
   end
   proxy "chapter-four/#{a}.html", "chapter-four/template4.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -213,7 +213,7 @@ int_array.each do |number|
     c = "/chapter-five/index"
   end 
   if a == "83"
-    b = "/chapter-five/index"
+    b = "/chapterindex"
   end
   proxy "chapter-five/#{a}.html", "chapter-five/template5.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -236,7 +236,7 @@ int_array.each do |number|
     c = "/chapter-six/index"
   end 
   if a == "49"
-    b = "/chapter-six/index"
+    b = "/chapterindex"
   end
   proxy "chapter-six/#{a}.html", "chapter-six/template6.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -259,7 +259,7 @@ int_array.each do |number|
     c = "/chapter-seven/index"
   end 
   if a == "68"
-    b = "/chapter-seven/index"
+    b = "/chapterindex"
   end
   proxy "chapter-seven/#{a}.html", "chapter-seven/template7.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -282,7 +282,7 @@ int_array.each do |number|
     c = "/chapter-eight/index"
   end 
   if a == "74"
-    b = "/chapter-eight/index"
+    b = "/chapterindex"
   end
   proxy "chapter-eight/#{a}.html", "chapter-eight/template8.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -305,7 +305,7 @@ int_array.each do |number|
     c = "/chapter-nine/index"
   end 
   if a == "112"
-    b = "/chapter-nine/index"
+    b = "/chapterindex"
   end
   proxy "chapter-nine/#{a}.html", "chapter-nine/template9.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -328,7 +328,7 @@ int_array.each do |number|
     c = "/chapter-ten/index"
   end 
   if a == "107"
-    b = "/chapter-ten/index"
+    b = "/chapterindex"
   end
   proxy "chapter-ten/#{a}.html", "chapter-ten/template10.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -349,7 +349,7 @@ int_array.each do |number|
     c = "/chapter-eleven/index"
   end 
   if a == "78"
-    b = "/chapter-eleven/index"
+    b = "/chapterindex"
   end
   proxy "chapter-eleven/#{a}.html", "chapter-eleven/template11.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
