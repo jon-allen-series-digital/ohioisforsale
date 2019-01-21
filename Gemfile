@@ -11,3 +11,7 @@ gem "builder", "~> 3.0"
 gem 'middleman-deploy', '~> 1.0'
 
 gem "middleman-sitemap"
+
+gem "sprockets", ">= 2.12.5"
+gem "rack", ">= 1.6.11"
+gem "ffi", ">= 1.9.24"
