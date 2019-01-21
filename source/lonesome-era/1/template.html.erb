@@ -1,0 +1,29 @@
+---
+title: 'Chapter 1 | '
+---
+
+<div class='page-wrap'>
+	<div class='row'>
+
+		<div class='page-view'>
+      <% link_to next_page + '.html' do %>
+			<%= image_tag '/images/lonesome-era/1/lonesome_era_1_' + page_number + '.jpg' %>
+      <% end %>
+    </div>  
+  
+  <div class="buttons">
+    <div class="button left">
+    <%= link_to 'Previous Page', prev_page + '.html' %>
+    </div>
+    <div class="button center">
+      <%= link_to "Home", "/lonesome-era/" %>
+    </div>
+    <div class="button right">  
+      <%= link_to 'Next Page', next_page + '.html' %>
+    </div>  
+    
+    </div>  
+    <div class="preload"><%= link_to '', next_page %></div>
+  </div>  
+</div>      
+
