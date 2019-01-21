@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title + "Ohio Is For Sale" %></title>
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <%= favicon_tag '/images/favicon.ico' %> 
+    <%= stylesheet_link_tag "style" %>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-82875770-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  
+  <body class="<%= page_classes %>">
+    <div class="outer-wrap">
+      <div id="offcanvas">
+        <ul>
+          <li><%= link_to 'Comics','/chapterindex.html' %></li>
+          <li><hr></li>
+<!--           <li class="secondary"><%= link_to 'One', '/chapter-one/index.html' %></li>
+          <li class="secondary"><%= link_to 'Two', '/chapter-two/index.html' %></li>
+          <li class="secondary"><%= link_to 'Three', '/chapter-three/index.html' %></li>
+          <li class="secondary"><%= link_to 'Four', '/chapter-four/index.html' %></li>
+          <li class="secondary"><%= link_to 'Five', '/chapter-five/index.html' %></li>
+          <li class="secondary"><%= link_to 'Six', '/chapter-six/index.html' %></li>
+          <li class="secondary"><%= link_to 'Seven', '/chapter-seven/index.html' %></li>
+          <li class="secondary"><%= link_to 'Eight', '/chapter-eight/index.html' %></li>
+          <li class="secondary"><%= link_to 'Nine', '/chapter-nine/index.html' %></li>
+          <li class="secondary"><%= link_to 'Ten', '/chapter-ten/index.html' %></li>
+          <li class="secondary"><%= link_to 'Eleven', '/chapter-eleven/index.html' %></li>
+          <li><hr></li> -->
+          <li><%= link_to 'Shop', 'http://ohioisforsale.bigcartel.com/', :target =>'_blank' %></li>
+          <li><hr></li>
+          <li><%= link_to 'Press', '/press.html' %></li>          
+          <li><hr></li>
+          <li><%= link_to 'Contact', '/contact.html' %></li>
+          <li><hr></li>
+          <li><%= link_to 'Expert Lawn Care', 'http://expertlawncare.tumblr.com/', :target =>'_blank' %></li>
+        </ul>
+      </div>      
+      <div class="inner-wrap">
+        <div id="header">
+          <div class="page-wrap">
+            <% link_to '/index.html' do %>
+              <div id="logo">
+                <%= image_tag '/images/logo.png' %>
+              </div>
+            <% end %>  
+            <nav>
+              <ul>
+                <li><%= link_to 'Comics','/chapterindex.html' %></li>
+                <li><%= link_to 'Shop', 'http://ohioisforsale.bigcartel.com/', :target =>'_blank' %></li>
+                <li><%= link_to 'Press', '/press.html' %></li>                
+                <li><%= link_to 'Contact', '/contact.html' %></li>
+                <li><%= link_to 'Expert Lawn Care', 'http://expertlawncare.tumblr.com/', :target =>'_blank' %></li>
+              </ul>
+            </nav>
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+          </div>  
+         </div> 
+
+          <div id="main" role="main">
+            <div id="main-spacer"></div>
+            <div class="flex-wrap">
+              <%= yield %>
+              <div id="sidebar">
+                <ul>
+                  <li>
+                    <% link_to '/lonesome-era/' do %>
+                      <h2>The Lonesome Era</h2>
+                    <% end %>
+                  </li>  
+                </ul>  
+                <hr>
+                <ul>
+                  <li class="button-chapter-one"><%= link_to 'Chapter One', '/lonesome-era/1/001/' %></li>
+                  <li class="button-chapter-two"><%= link_to 'Chapter Two', '/lonesome-era/2/001/' %></li>
+                  <li class="button-chapter-three"><%= link_to 'Chapter Three', '/lonesome-era/3/001/' %></li>
+                  <li class="button-chapter-four"><%= link_to 'Chapter Four', '/lonesome-era/4/001/' %></li>
+                  <li class="button-chapter-five"><%= link_to 'Chapter Five', '/lonesome-era/5/001/' %></li>
+                </ul>  
+                <hr>
+                <ul>
+                  <li><%= link_to 'About', '/lonesome-era/about/' %></li>
+                </ul>
+              </div>  
+
+            </div>
+          </div>
+<!--           <footer id="footer">
+            <%= mail_to 'jonathan@jon-allen.us' %>
+          </footer> -->
+      </div>    
+    </div>    
+    <%= javascript_include_tag  "all" %>
+  </body>
+</html>
