@@ -1,7 +1,7 @@
 @import "reset";
 
 $primary-color: #efeee6;
-$font-stack:    'Helvetica', sans-serif;
+$font-stack:    'Montserrat', 'Open Sans', 'Helvetica', sans-serif;
 $header-height: 60px;
 $page-margin: 1.5rem;
 $button-yellow: #e6d03a;
@@ -54,7 +54,8 @@ body {
 	position: relative;
 }
 .bg-inner-wrap {
-	padding: $page-margin;
+	/*padding: $page-margin;*/
+	padding-top: 1px;
 }
 .button-container {
 	width: 100%;
@@ -122,6 +123,7 @@ p a {
 	min-height: 100vh;
 	display: flex;
 	align-items: stretch;
+	flex-direction: row-reverse;
 }
 .page-wrap {
 	display: block;
@@ -157,6 +159,31 @@ p a {
 	margin: 60px auto 0;
 	display: inline-block;
 }
+.page-view h1 {
+	text-align: left;
+	max-width: 600px;
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 3rem;
+	em {
+		font-weight: 800;
+		font-style: italic;
+	}
+}
+.page-view h2 {
+	max-width: 600px;
+	text-align: left;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+.page-view p {
+	max-width: 600px;
+	text-align: left;
+	em {
+		font-style: italic;
+	}
+}
 .page-view span {
 	display: block;
 	text-align: right;
@@ -173,7 +200,7 @@ p {
   font-weight: 800;
 }
 #sidebar {
-	width: 200px;
+	width: 300px;
 	background-color: #222;
 	display: inline;
 	float: left;
@@ -182,22 +209,27 @@ p {
 }
 #sidebar h2 {
 	color: #fff;
-	padding: 12px 24px;
-	// font-size: 16px;
-	// font-weight: bold;
-	// border-bottom: 1px solid #5b5b5b;
-	// margin-bottom: 1rem;
+	padding: 8px 0;
+	font-size: 16px;
+	font-weight: bold;
 }
 
-#sidebar li {
+#sidebar li, .nav-buttons li {
 	margin: 0 0 -1px 0;
 	display: block;
 	float: none;
 	@include transition;
 	padding-left: 1rem;
+	font-size: .875rem;
+	font-weight: 400;
+	/*text-transform: uppercase;*/
 }
 #sidebar li:hover {
 	background-color: #444;
+}
+#sidebar li.selected {
+	border-left: .3rem solid #444;
+	padding-left: .7rem;
 }
 #sidebar hr {
 	margin-bottom: 1px;
@@ -205,13 +237,16 @@ p {
 }
 #sidebar li a {
 	display: block;
-	padding: 12px 24px;
+	padding: 16px 24px;
 	color: #c4c4c4;
 }
 
 #sidebar a {
 	color: #fff;
 	text-decoration: none;
+}
+.nav-buttons {
+	display: none;
 }
 #logo {
 	float: left;
@@ -347,31 +382,31 @@ h1 {
 }
 .nav-buttons {
 	display: flex;
-	justify-content: center;
+	justify-content: stretch;
 }
 .nav-button {
 	@include transition;
-	padding: .5rem 0;
-	color: #fff;
-	background-color: #fdab55;
-	flex-grow: 1;
-	margin: 0 4px;
+	padding: 3rem 0;
+	color: #000;
+	background-color: #ffea2a;
+	width: 100%;
+	/*margin: 0 4px;*/
 	text-align: center;
 	/*background-color: #fff;*/
 	/*border: 1px solid #ccc;*/
 	float: left;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-size: .875rem;
+	font-size: 1.5rem;
 	border-radius: 3px;
-	box-shadow: 2px 2px 5px #ccc;
+	/*box-shadow: 2px 2px 5px #ccc;*/
 	&:hover {
 		background-color: #fdab55;
 		border: 1px solid #fdab55;
 		color: #fff;
 	}	
-	&:first-child {margin-left: 0;}
-	&:last-child {margin-right: 0;}
+/*	&:first-child {margin-left: 0;}
+	&:last-child {margin-right: 0;}*/
 }
 .column {
 	width: 50%;
@@ -426,8 +461,23 @@ footer {
 @media only screen and (max-width : 960px) {
 	/** {background-color: rgba(255,0,0,0.3);}*/
 	// #logo {margin: 28px;}
+	.flex-wrap {
+		display: initial;
+	}
+	.page-view img {
+		max-width: 600px;
+	}
 	#sidebar {
-		display: none;
+		width: 100%;
+		margin-top: 0;
+		padding-bottom: 6rem;
+	}
+	#sidebar ul {
+		max-width: 600px;
+		margin: 0 auto;
+		li {
+			padding-left: 0;
+		}
 	}
 	#header nav ul li {display: none;}
 	#header .offcanvas ul li {display: block;}
@@ -455,6 +505,17 @@ footer {
 		display: block;
 		padding-bottom: 1rem;
 	}	
+	.nav-buttons {
+		display: block;
+		justify-content: initial;
+	}
+	.nav-button {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: .5rem 0;
+		margin: 0 0 6px 0;
+	}
 }
 @media only screen and (max-width : 1055px) {
 	.chapter-index {
@@ -501,16 +562,5 @@ footer {
 	.button-container .button a {
 		font-size: 24px;
 		padding: .75rem;
-	}
-	.nav-buttons {
-		display: block;
-		justify-content: initial;
-	}
-	.nav-button {
-		display: block;
-		width: 100%;
-		text-align: center;
-		padding: .5rem 0;
-		margin: 0 0 6px 0;
 	}
 }	
