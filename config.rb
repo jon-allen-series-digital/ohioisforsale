@@ -101,7 +101,11 @@ page "/chapter-eight/*", :layout => "layout-page"
 page "/chapter-nine/*", :layout => "layout-page"
 page "/chapter-ten/*", :layout => "layout-page"
 page "/chapter-eleven/*", :layout => "layout-page"
+page "/lonesome-era/*", :layout => "layout-page"
 
+#=======================================================================
+# Ohio Is For Sale
+#=======================================================================
 
 # Chapter One
 
@@ -333,6 +337,8 @@ int_array.each do |number|
   proxy "chapter-ten/#{a}.html", "chapter-ten/template10.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
 
+# Chapter Eleven
+
 int_array = Array.new(78) { |e| e = e + 1 }
 
 int_array.each do |number| 
@@ -352,6 +358,126 @@ int_array.each do |number|
     b = "/chapterindex"
   end
   proxy "chapter-eleven/#{a}.html", "chapter-eleven/template11.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
+end
+
+#=======================================================================
+# Lonesome Era
+#=======================================================================
+
+# Chapter One
+
+int_array = Array.new(61) { |e| e = e + 1 }
+
+int_array.each do |number| 
+  a = number
+  b = number += 1 
+  c = a - 1
+  a = a.to_s
+  b = b.to_s
+  c = c.to_s
+  a = format('%03d', a)
+  b = format('%03d', b)
+  c = format('%03d', c)
+  if a == "001"
+    c = "/lonesome-era/index"
+  end 
+  if a == "061"
+    b = "/lonesome-era/index"
+  end
+  proxy "lonesome-era/1/#{a}.html", "lonesome-era/1/template.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
+end
+
+# Chapter Two
+
+int_array = Array.new(67) { |e| e = e + 1 }
+
+int_array.each do |number| 
+  a = number
+  b = number += 1 
+  c = a - 1
+  a = a.to_s
+  b = b.to_s
+  c = c.to_s
+  a = format('%03d', a)
+  b = format('%03d', b)
+  c = format('%03d', c)
+  if a == "001"
+    c = "/lonesome-era/index"
+  end 
+  if a == "067"
+    b = "/lonesome-era/index"
+  end
+  proxy "lonesome-era/2/#{a}.html", "lonesome-era/2/template.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
+end
+
+# Chapter Three
+
+int_array = Array.new(103) { |e| e = e + 1 }
+
+int_array.each do |number| 
+  a = number
+  b = number += 1 
+  c = a - 1
+  a = a.to_s
+  b = b.to_s
+  c = c.to_s
+  a = format('%03d', a)
+  b = format('%03d', b)
+  c = format('%03d', c)
+  if a == "001"
+    c = "/lonesome-era/index"
+  end 
+  if a == "103"
+    b = "/lonesome-era/index"
+  end
+  proxy "lonesome-era/3/#{a}.html", "lonesome-era/3/template.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
+end
+
+# Chapter Four
+
+int_array = Array.new(79) { |e| e = e + 1 }
+
+int_array.each do |number| 
+  a = number
+  b = number += 1 
+  c = a - 1
+  a = a.to_s
+  b = b.to_s
+  c = c.to_s
+  a = format('%03d', a)
+  b = format('%03d', b)
+  c = format('%03d', c)
+  if a == "001"
+    c = "/lonesome-era/index"
+  end 
+  if a == "079"
+    b = "/lonesome-era/index"
+  end
+  proxy "lonesome-era/4/#{a}.html", "lonesome-era/4/template.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
+end
+
+
+# Chapter Five
+
+int_array = Array.new(109) { |e| e = e + 1 }
+
+int_array.each do |number| 
+  a = number
+  b = number += 1 
+  c = a - 1
+  a = a.to_s
+  b = b.to_s
+  c = c.to_s
+  a = format('%03d', a)
+  b = format('%03d', b)
+  c = format('%03d', c)
+  if a == "001"
+    c = "/lonesome-era/index"
+  end 
+  if a == "109"
+    b = "/lonesome-era/index"
+  end
+  proxy "lonesome-era/5/#{a}.html", "lonesome-era/5/template.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
 
 # def add(number, 1)
