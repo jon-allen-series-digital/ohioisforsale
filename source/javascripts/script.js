@@ -60,4 +60,24 @@ else if ($(".page-view").hasClass("ohio-eleven")) {
 	$(["/images/pages/chapter-eleven/ohio_11_" + imageLoad + "_gray.jpg"]).preload();
 }
 
+// nav link highlighting
+
+var url = window.location.href;
+console.log(url);
+
+if(url.indexOf("/1/") > -1) {
+   $('li.button-chapter-one').addClass('selected');
+}
+else if(url.indexOf("/2/") > -1) {
+   $('li.button-chapter-two').addClass('selected');
+}
+else if(url.indexOf("/3/") > -1) {
+   $('li.button-chapter-three').addClass('selected');
+}
+else if(url.indexOf("/4/") > -1) {
+   $('li.button-chapter-four').addClass('selected');
+}
+else if(url.indexOf("/5/") > -1) {
+   $('li.button-chapter-five').addClass('selected');
+}
 });
