@@ -101,7 +101,7 @@ page "/chapter-eight/*", :layout => "layout-page"
 page "/chapter-nine/*", :layout => "layout-page"
 page "/chapter-ten/*", :layout => "layout-page"
 page "/chapter-eleven/*", :layout => "layout-page"
-page "/lonesome-era/*", :layout => "layout-page"
+page "/lonesome-era/*", :layout => "layout-page-sidebar"
 
 #=======================================================================
 # Ohio Is For Sale
@@ -382,7 +382,7 @@ int_array.each do |number|
     c = "/lonesome-era/index"
   end 
   if a == "061"
-    b = "/lonesome-era/index"
+    b = "/lonesome-era/2/001"
   end
   proxy "lonesome-era/1/#{a}.html", "lonesome-era/1/template.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -405,7 +405,7 @@ int_array.each do |number|
     c = "/lonesome-era/index"
   end 
   if a == "067"
-    b = "/lonesome-era/index"
+    b = "/lonesome-era/3/001"
   end
   proxy "lonesome-era/2/#{a}.html", "lonesome-era/2/template.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -428,7 +428,7 @@ int_array.each do |number|
     c = "/lonesome-era/index"
   end 
   if a == "103"
-    b = "/lonesome-era/index"
+    b = "/lonesome-era/4/001"
   end
   proxy "lonesome-era/3/#{a}.html", "lonesome-era/3/template.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
@@ -451,7 +451,7 @@ int_array.each do |number|
     c = "/lonesome-era/index"
   end 
   if a == "079"
-    b = "/lonesome-era/index"
+    b = "/lonesome-era/5/001"
   end
   proxy "lonesome-era/4/#{a}.html", "lonesome-era/4/template.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
 end
