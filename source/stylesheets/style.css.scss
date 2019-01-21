@@ -4,6 +4,7 @@ $primary-color: #efeee6;
 $font-stack:    'Helvetica', sans-serif;
 $header-height: 60px;
 $page-margin: 1.5rem;
+$button-yellow: #e6d03a;
 
 @mixin transition {
 	-webkit-transition: all .25s ease-out;
@@ -65,7 +66,7 @@ body {
 .button-container .button {
 	text-align: center;
 	margin: 0 auto;
-	background-color: #e6d03a;
+	background-color: $button-yellow;
 }
 .button-container .button a {
 	@include transition;
@@ -322,15 +323,55 @@ nav li a:hover {
 .buttons {
 	max-width: 600px;
 	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
 .button {
 	display: inline;
+}
+.button a {
+	@include transition;
+	&:hover {color: black;}
 }
 .button.left::before {
 	content: "\00ab";
 }
 .button.right::after {
 	content: "\00bb";
+}
+h1 {
+	margin: 1rem 0;
+	text-align: center;
+	font-weight: 800;
+	font-size: 1.5rem;
+}
+.nav-buttons {
+	display: flex;
+	justify-content: center;
+}
+.nav-button {
+	@include transition;
+	padding: .5rem 0;
+	color: #fff;
+	background-color: #fdab55;
+	flex-grow: 1;
+	margin: 0 4px;
+	text-align: center;
+	/*background-color: #fff;*/
+	/*border: 1px solid #ccc;*/
+	float: left;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: .875rem;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px #ccc;
+	&:hover {
+		background-color: #fdab55;
+		border: 1px solid #fdab55;
+		color: #fff;
+	}	
+	&:first-child {margin-left: 0;}
+	&:last-child {margin-right: 0;}
 }
 .column {
 	width: 50%;
@@ -349,6 +390,7 @@ nav li a:hover {
 }
 .left {float: left;}
 .right {float: right;}
+.center {margin: 0 auto ; text-align: center;}
 .clear {
 	clear: both;
 }
@@ -460,4 +502,15 @@ footer {
 		font-size: 24px;
 		padding: .75rem;
 	}
-}
+	.nav-buttons {
+		display: block;
+		justify-content: initial;
+	}
+	.nav-button {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: .5rem 0;
+		margin: 0 0 6px 0;
+	}
+}	
