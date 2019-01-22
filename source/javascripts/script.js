@@ -59,6 +59,21 @@ else if ($(".page-view").hasClass("ohio-ten")) {
 else if ($(".page-view").hasClass("ohio-eleven")) {
 	$(["/images/pages/chapter-eleven/ohio_11_" + imageLoad + "_gray.jpg"]).preload();
 }
+else if ($(".page-view").hasClass("lonesome-era-one")) {
+	$(["/images/lonesome-era/1/lonesome_era_1_" + imageLoad + ".jpg"]).preload();
+}
+else if ($(".page-view").hasClass("lonesome-era-two")) {
+	$(["/images/lonesome-era/2/lonesome_era_2_" + imageLoad + ".jpg"]).preload();
+}
+else if ($(".page-view").hasClass("lonesome-era-three")) {
+	$(["/images/lonesome-era/3/lonesome_era_3_" + imageLoad + ".jpg"]).preload();
+}
+else if ($(".page-view").hasClass("lonesome-era-four")) {
+	$(["/images/lonesome-era/4/lonesome_era_4_" + imageLoad + ".jpg"]).preload();
+}
+else if ($(".page-view").hasClass("lonesome-era-five")) {
+	$(["/images/lonesome-era/5/lonesome_era_5_" + imageLoad + ".jpg"]).preload();
+}
 
 // nav link highlighting
 

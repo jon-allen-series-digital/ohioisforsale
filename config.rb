@@ -502,7 +502,7 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-activate :sitemap
+activate :sitemap, :hostname => "http://www.ohioisforsale.com"
 
 activate :deploy do |deploy|
   deploy.method = :sftp
