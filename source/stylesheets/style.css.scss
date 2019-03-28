@@ -1,7 +1,7 @@
 @import "reset";
 
 $primary-color: #efeee6;
-$font-stack:    'Montserrat', 'Open Sans', 'Helvetica', sans-serif;
+$font-stack:    'Helvetica', sans-serif;
 $header-height: 60px;
 $page-margin: 1.5rem;
 $button-yellow: #e6d03a;
@@ -71,12 +71,12 @@ body {
 }
 .button-container .button a {
 	@include transition;
-	font-family: 'UnifrakturMaguntia', 'Helvetica', sans-serif;
 	padding: 1rem 1.5rem;
 	display: block;
 	color: #000;
 	font-weight: bold;
-	font-size: 36px;
+	font-size: 24px;
+	text-transform: uppercase;
 	&:hover {
 		background-color: black;
 		color: #e6d03a;
