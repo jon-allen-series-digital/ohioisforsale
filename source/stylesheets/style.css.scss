@@ -79,7 +79,7 @@ body {
 	text-transform: uppercase;
 	&:hover {
 		background-color: black;
-		color: #e6d03a;
+		color: $button-yellow;
 	}
 }
 .bg-img {
@@ -145,6 +145,7 @@ p a {
 }
 #main {
 	// overflow-y: hidden;
+	min-height: 100vh;
 }
 .chapter-index {
 	width: 1056px;
