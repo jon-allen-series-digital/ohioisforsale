@@ -3,7 +3,7 @@
 $primary-color: #efeee6;
 $font-stack:    'Helvetica', sans-serif;
 $header-height: 60px;
-$page-margin: 1.5rem;
+$page-margin: 1.25rem;
 $button-yellow: #f0c902;
 
 @mixin transition {
@@ -54,8 +54,7 @@ body {
 	position: relative;
 }
 .bg-inner-wrap {
-	/*padding: $page-margin;*/
-	padding-top: 1px;
+	padding: $page-margin;
 }
 .button-container {
 	width: 100%;
@@ -431,7 +430,7 @@ h1 {
 	clear: both;
 }
 hr {
-	margin: 0 0 1rem 0;
+	margin: 0 0 $page-margin 0;
 	border-top: 1px solid #ddd;
 	border-bottom: none;
 }
