@@ -81,6 +81,7 @@ body {
 		color: $button-yellow;
 	}
 }
+
 .bg-img {
 	display: block;
 	height: 100%;
@@ -368,12 +369,12 @@ nav li a:hover {
 	@include transition;
 	&:hover {color: black;}
 }
-.button.left::before {
+/*.button.left::before {
 	content: "\00ab";
 }
 .button.right::after {
 	content: "\00bb";
-}
+}*/
 h1 {
 	margin: 1rem 0;
 	text-align: center;

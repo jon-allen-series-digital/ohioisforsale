@@ -5,22 +5,28 @@ title: 'Chapter 1 | '
 <div class='page-wrap'>
 	<div class='row'>
 
-		<div class='page-view ohio-one'>
-      <% link_to next_page + '.html' do %>
-			<%= image_tag '/images/pages/chapter-one/ohio_page' + page_number + '_gray.gif' %>
-      <% end %>
-    </div>  
-  
-  <div class="buttons">
-    <div class="button left">
-    <%= link_to 'Previous Page', prev_page + '.html' %>
-    </div>
-    <div class="button right">  
-      <%= link_to 'Next Page', next_page + '.html' %>
-    </div>  
+    <div class='page-view ohio-one'>
+    
+      <%= image_tag '/images/cover-large-1.jpg' %>
     
     </div>  
-    <div class="preload"><%= link_to '', next_page %></div>
+
+    <div class="container">
+    <div class='page-view ohio-one'>
+      <article class="post">
+        
+        <%= image_tag '/images/pages/chapter-one/ohio_page' + page_number + '_gray.gif' %>
+        
+      </article>
+    </div>
+  
+    </div>
+    <div class="buttons">
+      <div class="button right">  
+        <%= link_to 'Next Page', next_page, :class => "pagination pagination__next" %>
+      </div>  
+   </div>      
+
   </div>  
 </div>      
 

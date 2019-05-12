@@ -1,0 +1,78 @@
+index
+---
+title: 'Chapter 1 | '
+---
+
+<div class='page-wrap'>
+  <div class='row'>
+    <div class='page-view ohio-one'>
+      <% link_to '01.html' do %>
+      <%= image_tag '/images/cover-large-1.jpg' %>
+      <% end %>
+    </div>  
+
+    <div class="container">
+
+      <article class="post">
+        <%= image_tag '/images/pages/chapter-one/ohio_page1_gray.gif' %>
+      </article>
+
+      <article class="post">
+        <%= image_tag '/images/pages/chapter-one/ohio_page2_gray.gif' %>
+      </article>
+
+      <article class="post">
+        <%= image_tag '/images/pages/chapter-one/ohio_page3_gray.gif' %>
+      </article>
+      
+    </div>
+  
+    <div class="buttons">
+      <div class="button right">  
+        <%= link_to 'Next Page', '/21.html', :class => "pagination__next" %>
+      </div>  
+    
+    </div>  
+    <div class="preload"><%= link_to '', '01' %></div>
+  </div>  
+</div>      
+
+
+template
+
+---
+title: 'Chapter 1 | '
+---
+
+<div class='page-wrap'>
+	<div class='row'>
+
+    <div class="container">
+    <div class='page-view ohio-one'>
+      <article class="post">
+        
+        <%= image_tag '/images/pages/chapter-one/ohio_page' + page_number + '_gray.gif' %>
+        
+      </article>
+    </div>
+      
+    </div>
+  
+    <div class="buttons">
+      <div class="button right">  
+        <%= link_to 'Next Page', next_page, :class => "pagination__next" %>
+      </div>     
+  <!-- 
+  <div class="buttons">
+    <div class="button left">
+    <%= link_to 'Previous Page', prev_page + '.html' %>
+    </div>
+    <div class="button right">  
+      <%= link_to 'Next Page', next_page + '.html' %>
+    </div>  
+    
+    </div>  
+    <div class="preload"><%= link_to '', next_page %></div> -->
+  </div>  
+</div>      
+
