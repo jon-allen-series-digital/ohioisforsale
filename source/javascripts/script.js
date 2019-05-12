@@ -96,3 +96,10 @@ else if(url.indexOf("/5/") > -1) {
    $('li.button-chapter-five').addClass('selected');
 }
 });
+
+$('.container').infiniteScroll({
+  // options
+  path: '.pagination__next',
+  append: '.post',
+  history: false,
+});
