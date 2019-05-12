@@ -5,26 +5,18 @@ title: 'Chapter 1 | '
 <div class='page-wrap'>
 	<div class='row'>
 
+    
     <div class='page-view ohio-one'>
-    
-      <%= image_tag '/images/cover-large-1.jpg' %>
-    
 
-    <div class="container">
-    
-      <article class="post">
+      <div class="container">
+
+        <article class="post">        
+          <%= image_tag '/images/pages/chapter-one/ohio_page' + page_number + '_gray.gif' %>
+        </article>          
+      </div>        
         
-        <%= image_tag '/images/pages/chapter-one/ohio_page' + page_number + '_gray.gif' %>
-        
-      </article>
-    </div>
-  
     </div>
 
-                  <button onclick="topFunction()" id="myBtn" title="Back to top">
-                <%= image_tag 'chevron-up.svg', :class=>'chevron-up' %>
-                Top
-              </button>
     <div class="buttons">
       <div class="button right">  
         <%= link_to 'Next Page', next_page, :class => "pagination pagination__next" %>

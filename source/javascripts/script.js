@@ -101,8 +101,9 @@ $('.container').infiniteScroll({
   // options
   path: '.pagination__next',
   append: '.post',
-  history: 'replace',
+  history: false,
   hideNav: '.pagination',
+  prefill: true,
 });
 
 window.onscroll = function() {scrollFunction()};
