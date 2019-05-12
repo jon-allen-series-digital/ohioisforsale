@@ -139,10 +139,7 @@ int_array.each do |number|
   a = a.to_s
   b = b.to_s
   c = c.to_s
-  a = format('%02d', a)
-  b = format('%02d', b)
-  c = format('%02d', c)
-   if a == "01"
+   if a == "1"
     c = "/chapter-two/index"
   end 
   if a == "50"
