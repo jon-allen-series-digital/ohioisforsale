@@ -95,7 +95,7 @@ else if(url.indexOf("/4/") > -1) {
 else if(url.indexOf("/5/") > -1) {
    $('li.button-chapter-five').addClass('selected');
 }
-});
+
 
 $('.container').infiniteScroll({
   // options
@@ -121,3 +121,13 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+$(window).scroll(function () {
+	$('#offcanvas ul').offset == 0;
+});
+
+});
+
+
+
+
