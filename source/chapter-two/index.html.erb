@@ -3,20 +3,32 @@ title: 'Chapter 2 | '
 ---
 
 <div class='page-wrap'>
-	<div class='row'>
-		<div class='page-view ohio-two'>
-      <% link_to '01.html' do %>
-			<%= image_tag '/images/cover-large-2.jpg' %>
-      <% end %>
-    </div>  
+
+<div class='page-view ohio-two'>
+      <div class='row'>
+    
+        <%= image_tag '/images/cover-large-2.jpg' %>
+      <div class='row'>
+      
+      <div class="container">
+        <article class="post">
+
+        </article>
+      </div>        
+
+
+    
   
     <div class="buttons">
       <div class="button right">  
-        <%= link_to 'Next Page', '01.html' %>
+        <%= link_to 'Next Page', '1.html', :class => "pagination pagination__next" %>
       </div>  
     
     </div>  
-    <div class="preload"><%= link_to '', '01' %></div>
-  </div>  
-</div>      
 
+    <div class="button">
+    <%= link_to 'Next Chapter', 'chapter-three.html' %>
+   </div> 
+    
+  </div>  
+</div>   

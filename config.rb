@@ -31,253 +31,31 @@ page "/lonesome-era/*", :layout => "layout-page-sidebar"
 # Ohio Is For Sale
 #=======================================================================
 
-# Chapter One
+def create_pages(number, chapter, template)
+  int_array = Array.new(number) { |e| e = e + 1 }
 
-int_array = Array.new(54) { |e| e = e + 1 }
+  int_array.each do |number| 
+    a = number
+    a = a.to_s
+    b = number += 1 
+    b = b.to_s
 
-int_array.each do |number| 
-  a = number
-  b = number += 1 
-  c = a - 1
-  a = a.to_s
-  b = b.to_s
-  c = c.to_s
-
-  if a == "1"
-    c = "/chapter-one/index"
-  end 
-  if a == "54"
-    b = "/chapterindex"
-  end 
-  proxy "chapter-one/#{a}.html", "chapter-one/template1.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
-end
-
-# Chapter Two
-
-int_array = Array.new(50) { |e| e = e + 1 }
-
-int_array.each do |number| 
-  a = number
-  b = number += 1 
-  c = a - 1
-  a = a.to_s
-  b = b.to_s
-  c = c.to_s
-   if a == "1"
-    c = "/chapter-two/index"
-  end 
-  if a == "50"
-    b = "/chapterindex"
+    proxy "#{chapter}/#{a}.html", "template-" + template + ".html", :locals => { :page_number => a, :next_page => b, :chapter => chapter }, :ignore => true
   end
-  proxy "chapter-two/#{a}.html", "chapter-two/template2.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
-end
+end  
 
-# Chapter Three
+create_pages(54, "chapter-one", "a");
+create_pages(50, "chapter-two", "b");
+create_pages(37, "chapter-three", "b");
+create_pages(36, "chapter-four", "b");
+create_pages(83, "chapter-five", "b");
+create_pages(49, "chapter-six", "b");
+create_pages(68, "chapter-seven", "b");
+create_pages(74, "chapter-eight", "b");
+create_pages(112, "chapter-nine", "b");
+create_pages(107, "chapter-ten", "b");
+create_pages(78, "chapter-eleven", "b");
 
-int_array = Array.new(37) { |e| e = e + 1 }
-
-int_array.each do |number| 
-  a = number
-  b = number += 1 
-  c = a - 1
-  a = a.to_s
-  b = b.to_s
-  c = c.to_s
-  a = format('%02d', a)
-  b = format('%02d', b)
-  c = format('%02d', c)
-   if a == "01"
-    c = "/chapter-three/index"
-  end 
-  if a == "37"
-    b = "/chapterindex"
-  end
-  proxy "chapter-three/#{a}.html", "chapter-three/template3.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
-end
-
-# Chapter Four
-
-int_array = Array.new(36) { |e| e = e + 1 }
-
-int_array.each do |number| 
-  a = number
-  b = number += 1 
-  c = a - 1
-  a = a.to_s
-  b = b.to_s
-  c = c.to_s
-  a = format('%02d', a)
-  b = format('%02d', b)
-  c = format('%02d', c)
-   if a == "01"
-    c = "/chapter-four/index"
-  end 
-  if a == "36"
-    b = "/chapterindex"
-  end
-  proxy "chapter-four/#{a}.html", "chapter-four/template4.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
-end
-
-# Chapter Five
-
-int_array = Array.new(83) { |e| e = e + 1 }
-
-int_array.each do |number| 
-  a = number
-  b = number += 1 
-  c = a - 1
-  a = a.to_s
-  b = b.to_s
-  c = c.to_s
-  a = format('%02d', a)
-  b = format('%02d', b)
-  c = format('%02d', c)
-   if a == "01"
-    c = "/chapter-five/index"
-  end 
-  if a == "83"
-    b = "/chapterindex"
-  end
-  proxy "chapter-five/#{a}.html", "chapter-five/template5.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
-end
-
-# Chapter Six
-
-int_array = Array.new(49) { |e| e = e + 1 }
-
-int_array.each do |number| 
-  a = number
-  b = number += 1 
-  c = a - 1
-  a = a.to_s
-  b = b.to_s
-  c = c.to_s
-  a = format('%02d', a)
-  b = format('%02d', b)
-  c = format('%02d', c)
-   if a == "01"
-    c = "/chapter-six/index"
-  end 
-  if a == "49"
-    b = "/chapterindex"
-  end
-  proxy "chapter-six/#{a}.html", "chapter-six/template6.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
-end
-
-# Chapter Seven
-
-int_array = Array.new(68) { |e| e = e + 1 }
-
-int_array.each do |number| 
-  a = number
-  b = number += 1 
-  c = a - 1
-  a = a.to_s
-  b = b.to_s
-  c = c.to_s
-  a = format('%02d', a)
-  b = format('%02d', b)
-  c = format('%02d', c)
-   if a == "01"
-    c = "/chapter-seven/index"
-  end 
-  if a == "68"
-    b = "/chapterindex"
-  end
-  proxy "chapter-seven/#{a}.html", "chapter-seven/template7.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
-end
-
-# Chapter Eight
-
-int_array = Array.new(74) { |e| e = e + 1 }
-
-int_array.each do |number| 
-  a = number
-  b = number += 1 
-  c = a - 1
-  a = a.to_s
-  b = b.to_s
-  c = c.to_s
-  a = format('%02d', a)
-  b = format('%02d', b)
-  c = format('%02d', c)
-   if a == "01"
-    c = "/chapter-eight/index"
-  end 
-  if a == "74"
-    b = "/chapterindex"
-  end
-  proxy "chapter-eight/#{a}.html", "chapter-eight/template8.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
-end
-
-# Chapter Nine
-
-int_array = Array.new(112) { |e| e = e + 1 }
-
-int_array.each do |number| 
-  a = number
-  b = number += 1 
-  c = a - 1
-  a = a.to_s
-  b = b.to_s
-  c = c.to_s
-  a = format('%02d', a)
-  b = format('%02d', b)
-  c = format('%02d', c)
-   if a == "01"
-    c = "/chapter-nine/index"
-  end 
-  if a == "112"
-    b = "/chapterindex"
-  end
-  proxy "chapter-nine/#{a}.html", "chapter-nine/template9.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
-end
-
-# Chapter Ten
-
-int_array = Array.new(107) { |e| e = e + 1 }
-
-int_array.each do |number| 
-  a = number
-  b = number += 1 
-  c = a - 1
-  a = a.to_s
-  b = b.to_s
-  c = c.to_s
-  a = format('%02d', a)
-  b = format('%02d', b)
-  c = format('%02d', c)
-   if a == "01"
-    c = "/chapter-ten/index"
-  end 
-  if a == "107"
-    b = "/chapterindex"
-  end
-  proxy "chapter-ten/#{a}.html", "chapter-ten/template10.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
-end
-
-# Chapter Eleven
-
-int_array = Array.new(78) { |e| e = e + 1 }
-
-int_array.each do |number| 
-  a = number
-  b = number += 1 
-  c = a - 1
-  a = a.to_s
-  b = b.to_s
-  c = c.to_s
-  a = format('%02d', a)
-  b = format('%02d', b)
-  c = format('%02d', c)
-   if a == "01"
-    c = "/chapter-eleven/index"
-  end 
-  if a == "78"
-    b = "/chapterindex"
-  end
-  proxy "chapter-eleven/#{a}.html", "chapter-eleven/template11.html", :locals => { :page_number => a, :next_page => b, :prev_page => c }, :ignore => true
-end
 
 redirect "chapter-one/01.html", to: "chapter-one/1.html"
 
