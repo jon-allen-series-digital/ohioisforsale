@@ -12,24 +12,26 @@ title: ''
 %hr
 .page-wrap
 	.column.left.column-outer
-		.column.left.column-inner
-			= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'_blank' do
+		= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'_blank', :class=>"link-wrap" do
+			.column.left.column-inner
+			
 				= image_tag '/images/cover.jpg', :class=>'img-resize'
-		.column.right.column-inner
-			.text-wrap
-				%h2.strong Buy the book
-				%p Issues 1 - 5 collected into one big book, published by Alternative Comics.	
+			.column.right.column-inner
+				.text-wrap
+					%h2.strong Buy the book
+					%p Issues 1 - 5 collected into one big book, published by Alternative Comics.	
 	.column.right.column-outer
-		
-		.column.left.column-inner
-			= link_to 'chapter-eleven/index.html' do
-				= image_tag '/images/cover-large-11.jpg', :class=>'img-resize'
-		.column.right.column-inner
-			.text-wrap
-				%h2.strong Read the latest issue
-				%p 
-					Number eleven. Another installment in the ongoing story about this dumb gay kid and his problems, which starts in 
-					= link_to 'chapter six.', 'chapter-six/index.html'
+		= link_to 'julian-in-purgatory/index.html', :class=>"link-wrap" do
+			.column.left.column-inner
+			
+				= image_tag '/images/cover-large-julian.jpg', :class=>'img-resize'
+			.column.right.column-inner
+				.text-wrap
+					%h2.strong Read the latest thing
+					%p 
+						Julian's girlfriend kicks him out, and now he's out of money & drugs with no place to crash. Part one of three.
+
+							
 
 					
 .clear				

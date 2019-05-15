@@ -101,6 +101,9 @@ a {
 	color: #666;
 	text-decoration: none;
 }
+.link-wrap {
+	display: inline-block;
+}
 p a {
 	text-decoration: underline;
 }
@@ -431,6 +434,9 @@ h1 {
 .clear {
 	clear: both;
 }
+.button.right {
+	margin-left: 2rem;
+}
 hr {
 	margin: 0 0 $page-margin 0;
 	border-top: 1px solid #ddd;
@@ -459,6 +465,10 @@ footer {
 	display: block;
 	padding: 1rem $page-margin;
 	border-top: 1px solid #ddd;
+}
+.button-wrap {
+	display: inline-block;
+	width: 100%;
 }
 
 .chevron-up {
