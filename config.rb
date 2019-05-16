@@ -25,7 +25,6 @@ page "/chapter-eight/*", :layout => "layout-page"
 page "/chapter-nine/*", :layout => "layout-page"
 page "/chapter-ten/*", :layout => "layout-page"
 page "/chapter-eleven/*", :layout => "layout-page"
-page "/lonesome-era/*", :layout => "layout-page-sidebar"
 page "/julian-in-purgatory/*", :layout => "layout-page"
 
 #=======================================================================
