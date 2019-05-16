@@ -4,7 +4,10 @@ $primary-color: #efeee6;
 $font-stack:    'Helvetica', sans-serif;
 $header-height: 60px;
 $page-margin: 1.25rem;
-$button-yellow: #f0c902;
+$color-yellow: #f0c902;
+$color-orange: #f08900;
+$button-action: $color-yellow;
+
 
 @mixin transition {
 	-webkit-transition: all .25s ease-out;
@@ -12,7 +15,7 @@ $button-yellow: #f0c902;
 	transition: all .25s ease-out;
 }
 
-//* {background-color: rgba(255,0,0,0.3);}
+
 
 /*===========================================================
 #flex
@@ -63,10 +66,23 @@ body {
 	top: 0;
 	left: 0;
 }
+.button.styled-button a {
+	@include transition;
+	display: block;
+	padding: $page-margin;
+	margin-top: $page-margin;
+	border: 1px solid $primary-color;
+}
+.button.styled-button a::after {
+	content: "\00bb";
+}
+.button.styled-button a:hover {
+	background-color: $button-action;
+}
 .button-container .button {
 	text-align: center;
-	margin: 0 auto;
-	background-color: $button-yellow;
+	margin: $page-margin auto;
+	background-color: $button-action;
 }
 .button-container .button a {
 	@include transition;
@@ -78,7 +94,7 @@ body {
 	text-transform: uppercase;
 	&:hover {
 		background-color: black;
-		color: $button-yellow;
+		color: $button-action;
 	}
 }
 
@@ -367,7 +383,7 @@ nav li a:hover {
 	justify-content: space-between;
 }
 .button {
-	display: inline;
+	/*display: inline;*/
 }
 .button a {
 	@include transition;
