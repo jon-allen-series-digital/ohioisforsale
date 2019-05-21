@@ -21,7 +21,9 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-82875770-1', 'auto');
-      ga('send', 'pageview');
+      ga("set", "page", uri);
+      ga("send", "pageview");
+      ga("send", "event", "Scroll Pageview", uri);
 
     </script>
   </head>
