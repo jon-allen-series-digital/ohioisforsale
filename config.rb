@@ -26,6 +26,7 @@ page "/chapter-nine/*", :layout => "layout-page"
 page "/chapter-ten/*", :layout => "layout-page"
 page "/chapter-eleven/*", :layout => "layout-page"
 page "/julian-in-purgatory/*", :layout => "layout-page"
+page "/lonesome-era-preview/*", :layout => "layout-page"
 
 #=======================================================================
 # Ohio Is For Sale
@@ -56,6 +57,7 @@ create_pages(112, "chapter-nine", "b");
 create_pages(107, "chapter-ten", "b");
 create_pages(78, "chapter-eleven", "b");
 create_pages(72, "julian-in-purgatory", "b");
+create_pages(14, "lonesome-era-preview", "b");
 
 redirect "chapter-one/01.html", to: "chapter-one/1.html"
 redirect "chapter-one/02.html", to: "chapter-one/2.html"

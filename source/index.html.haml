@@ -6,31 +6,63 @@ title: ''
 	.bg-inner-wrap
 		= image_tag '/images/banner-1440-yellow.gif', :class=>'bg-img'
 	.button-container.flex--center
-		.button
+		.button.action-button.button-large
 			= link_to "Read From The Beginning", "chapter-one/index.html"
 .clear
 %hr
+
 .page-wrap
 	.column.left.column-outer
-		= link_to 'julian-in-purgatory/index.html', :class=>"link-wrap" do
-			.column.left.column-inner
-			
-				= image_tag '/images/cover-large-julian.jpg', :class=>'img-resize'
-			.column.right.column-inner
-				.text-wrap
-					%h2.strong Read the latest thing
-					%p 
-						Julian's girlfriend kicks him out, and now he's out of money & drugs with no place to crash. Part one of three.
+	
+		.column.left.column-inner
+		
+			= image_tag '/images/cover-large-julian.jpg', :class=>'img-resize'
+		.column.right.column-inner
+			.text-wrap
+				%h2.strong Read the latest thing
+				%p 
+					Julian's girlfriend kicks him out, and now he's out of money & drugs with no place to crash. Part one of three.
 
-	.column.right.column-outer
-		= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'_blank', :class=>"link-wrap" do
-			.column.left.column-inner
-			
-				= image_tag '/images/cover.jpg', :class=>'img-resize'
-			.column.right.column-inner
-				.text-wrap
-					%h2.strong Buy the book
-					%p Issues 1 - 5 collected into one big book, published by Alternative Comics.				
+				.button.action-button 
+					= link_to 'Read part one', 'julian-in-purgatory/index.html'
 
-					
+	.column.left.column-outer
+		.column.left.column-inner
+			= image_tag '/images/lonesome_era_cover.gif', :class=>'img-resize'
+
+		.column.right.column-inner
+			.text-wrap
+				%h2.strong News
+				%p I am excited to announce that my second graphic novel, The Lonesome Era, is coming out in October 2019 through Iron Circus Comics. This is a story about Camden, a hapless high schooler who’s got a crush on his straight best friend. This book collects issues 8, 10, and 11 of Ohio Is For Sale, with nearly 200 pages of new material to complete the story. 
+
+				%p I’ll be signing advance copies of the book at FlameCon this August in Brooklyn, NY. Come by and check it out!
+
+				.button.action-button
+					= link_to "Read a preview", "lonesome-era-preview/index.html"
+
+	%hr					
+	.column.left.column-outer
+		.column.left.column-inner
+		
+			= image_tag '/images/cover.jpg', :class=>'img-resize'
+		.column.right.column-inner
+			.text-wrap
+				%h2.strong Buy the book
+				%p Issues 1 - 5 collected into one big book, published by Alternative Comics.
+
+
+				.button.action-button 
+					= link_to 'Buy the book', 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'blank'		
+
+	.column.left.column-outer
+		.column.left.column-inner
+			= image_tag '/images/theartist.gif', :class=>'img-resize'
+
+		.column.right.column-inner
+			.text-wrap
+				%h2.strong Support
+				%p Follow me on social media, buy some comics, or just throw me a few bucks.
+
+				.button.action-button
+					= link_to "Support the artist", "/support.html"					
 .clear				

@@ -4,23 +4,19 @@ $primary-color: #efeee6;
 $font-stack:    'Helvetica', sans-serif;
 $header-height: 60px;
 $page-margin: 1.25rem;
-$color-yellow: #f0c902;
+$color-yellow: #ffd500;
 $color-orange: #f08900;
 $button-action: $color-yellow;
 
+/*===========================================================
+#mixins
+===========================================================*/
 
 @mixin transition {
 	-webkit-transition: all .25s ease-out;
 	-o-transition: all .25s ease-out;
 	transition: all .25s ease-out;
 }
-
-
-
-/*===========================================================
-#flex
-===========================================================*/
-
 @mixin flexbox {
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -33,6 +29,10 @@ $button-action: $color-yellow;
 	align-items: center
 }
 
+/*===========================================================
+#flex
+===========================================================*/
+
 .flex--center {
 	@include flexbox;
 	align-items: center;
@@ -42,6 +42,10 @@ $button-action: $color-yellow;
 	@include flexbox;
 	align-items: stretch;
 }
+
+/*===========================================================
+#body
+===========================================================*/
 
 body {
 	background-color: #fff;
@@ -59,45 +63,6 @@ body {
 .bg-inner-wrap {
 	padding: $page-margin;
 }
-.button-container {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.button.styled-button a {
-	@include transition;
-	display: block;
-	padding: $page-margin;
-	margin-top: $page-margin;
-	border: 1px solid $primary-color;
-}
-.button.styled-button a::after {
-	content: "\00bb";
-}
-.button.styled-button a:hover {
-	background-color: $button-action;
-}
-.button-container .button {
-	text-align: center;
-	margin: $page-margin auto;
-	background-color: $button-action;
-}
-.button-container .button a {
-	@include transition;
-	padding: 1rem 1.5rem;
-	display: block;
-	color: #000;
-	font-weight: bold;
-	font-size: 24px;
-	text-transform: uppercase;
-	&:hover {
-		background-color: black;
-		color: $button-action;
-	}
-}
-
 .bg-img {
 	display: block;
 	height: 100%;
@@ -112,16 +77,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-a {
-	color: #666;
-	text-decoration: none;
-}
-.link-wrap {
-	display: inline-block;
-}
-p a {
-	text-decoration: underline;
 }
 .row {
 	margin: 2em 0;
@@ -149,10 +104,96 @@ p a {
 	padding: 0 $page-margin;
 	margin: 0 auto;
 }
-.page-wrap img {
-	// border: 1px solid #ddd;
-	// padding: 2px;
+.column {
+	width: 50%;
+	display: inline;
+	padding-bottom: $page-margin / 2;
 }
+.column-inner.left {
+	width: 40%;
+}
+.column-inner.right {
+	width: 60%;
+}
+.img-resize {
+	height: 100%;
+	width: 100%;
+}
+.left {float: left;}
+.right {float: right;}
+.center {margin: 0 auto ; text-align: center;}
+.clear {
+	clear: both;
+}
+.text-wrap {
+	padding: 0 1rem;
+}
+
+/*===========================================================
+#buttons
+===========================================================*/
+
+.button-container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.buttons {
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.button a {
+	@include transition;
+	cursor: pointer;
+	/*border-radius: 4px;*/
+	text-align: center;
+}
+.action-button {
+	margin: 0 auto;
+	display: inline-block;
+}
+.action-button a {
+	@include transition;
+	padding: .75rem 1rem;
+	display: block;
+	color: #000;
+	font-weight: bold;
+	background-color: $button-action;
+	&:hover {
+		background-color: black;
+		color: $button-action;
+	}
+}
+.styled-button {
+	display: inline-block;	
+	margin-top: $page-margin;
+	border: 1px solid $primary-color;
+}
+.styled-button a {
+	display: block;
+	padding: .75rem 1rem;
+	&:hover {
+		background-color: $primary-color;
+	}
+}
+.button-large {
+	font-size: 24px;
+	padding: $page-margin;
+	text-transform: uppercase;
+}
+.button-wrap {
+	display: inline-block;
+	width: 100%;
+}
+
+/*===========================================================
+#header
+===========================================================*/
+
 #header {
 	position: absolute;
 	width: 100%;
@@ -163,24 +204,29 @@ p a {
 .header-push {
 	height: 60px;
 }
-#main {
-	// overflow-y: hidden;
-	min-height: 100vh;
+#logo {
+	float: left;
 }
-.chapter-index {
-	width: 1056px;
-	margin-left: auto;
-	margin-right: auto;
+#logo h1 {
+	text-indent: -9999px;
+	background: url(../images/logo.jpg) no-repeat top left;
+	background-size: contain;
+	height: 24px;
+	width: 306px;
+	margin-top: ($header-height - 24px) / 2;
 }
+
+/*===========================================================
+#page
+===========================================================*/
+
 .page-view {
 	text-align: center;
 	width: 100%;
-	
-	// max-width: 600px;
 	margin: 60px auto 0;
 	display: inline-block;
 }
-.page-view h1 {
+/*.page-view h1 {
 	text-align: left;
 	max-width: 600px;
 	font-size: 2rem;
@@ -197,7 +243,7 @@ p a {
 	font-size: 1rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
-}
+}*/
 .page-view p {
 	max-width: 600px;
 	text-align: left;
@@ -205,14 +251,25 @@ p a {
 		font-style: italic;
 	}
 }
-.page-view span {
+/*.page-view span {
 	display: block;
 	text-align: right;
 	font-size: 12px;
-}
+}*/
 .page-view img {
 	width: 100%;
 	height: 100%;
+}
+
+/*===========================================================
+#text
+===========================================================*/
+
+h1 {
+	margin: 1rem 0;
+	text-align: center;
+	font-weight: 800;
+	font-size: 1.5rem;
 }
 p {
   margin-bottom: 1em;
@@ -220,12 +277,81 @@ p {
 .strong {
   font-weight: 800;
 }
+a {
+	color: #666;
+	text-decoration: none;
+}
+.center {
+	text-align: center !important;
+}
+p a {
+	text-decoration: underline;
+}
+.button.right {
+	margin-left: 2rem;
+}
+h2.strong {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	color: #000;
+}
+
+/*===========================================================
+#components
+===========================================================*/
+
+.mail-box {
+	padding: 24px;
+	border: 1px solid #ddd;
+	margin: -46px auto 0 -124px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	text-align: center;
+}
+footer {
+	display: block;
+	padding: 1rem $page-margin;
+	border-top: 1px solid #ddd;
+}
+.chevron-up {
+	display: block;
+	margin: 0 auto 2px auto;
+}
+hr {
+	margin: 0 0 $page-margin 0;
+	border-top: 1px solid #ddd;
+	border-bottom: none;
+}
+#myBtn {
+  @include transition;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  
+  border: 1px solid #ccc;
+  color: #ccc; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: .5em .75em; /* Some padding */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+/*===========================================================
+#sidebar
+===========================================================*/
+
 #sidebar {
 	width: 300px;
 	background-color: #222;
 	display: inline;
 	float: left;
-	// padding: $page-margin;
 	margin-top: 60px;
 }
 #sidebar h2 {
@@ -243,7 +369,7 @@ p {
 	padding-left: 1rem;
 	font-size: .875rem;
 	font-weight: 400;
-	/*text-transform: uppercase;*/
+
 }
 #sidebar li:hover {
 	background-color: #444;
@@ -266,26 +392,11 @@ p {
 	color: #fff;
 	text-decoration: none;
 }
-.nav-buttons {
-	display: none;
-}
-#logo {
-	float: left;
-}
-#logo img {
-	height: 24px;
-	width: 306px;
-	margin-top: ($header-height - 24px) / 2;
-}
-#logo.vl {
-	background: #fff;
-	margin-top: 24px;
-}
-#logo h1 {
-	font-size: 36px;
-	color: #ddd;
-	line-height: 36px;
-}
+
+/*===========================================================
+#nav
+===========================================================*/
+
 nav {
 	float: right;
 }
@@ -304,6 +415,36 @@ nav li a {
 nav li a:hover {
 	text-decoration: underline;
 }
+.nav-buttons {
+	display: none;
+}
+.nav-buttons {
+	display: flex;
+	justify-content: stretch;
+}
+.nav-button {
+	@include transition;
+	padding: 3rem 0;
+	color: #000;
+	background-color: #ffea2a;
+	width: 100%;
+	text-align: center;
+	float: left;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.5rem;
+	border-radius: 3px;
+	&:hover {
+		background-color: #fdab55;
+		border: 1px solid #fdab55;
+		color: #fff;
+	}
+}
+
+/*===========================================================
+#offcanvas
+===========================================================*/
+
 #offcanvas {
 	background-color: #222;
 	height: auto;
@@ -345,8 +486,17 @@ nav li a:hover {
 #offcanvas li.secondary a {
 	color: #c4c4c4;
 }
+
+/*===========================================================
+#chapter-index
+===========================================================*/
+
+.chapter-index {
+	width: 1056px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .chapter-panel {
-	// border: 2px solid #000;
 	margin: $page-margin / 2;
 	display: inline;
 	float: left;
@@ -367,154 +517,14 @@ nav li a:hover {
 	margin-top: -3px;
 	margin-left: -3px;
 }
-.section label {
-	color: #fff;
-	font-weight: bold;
-	font-size: 1.4em;
-	line-height: 1.4em;
-	margin: 42px auto;
-	text-align: center;
-	display: block;
-}
-.buttons {
-	max-width: 600px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-}
-.button {
-	/*display: inline;*/
-}
-.button a {
-	@include transition;
-	&:hover {color: black;}
-}
-/*.button.left::before {
-	content: "\00ab";
-}
-.button.right::after {
-	content: "\00bb";
-}*/
-h1 {
-	margin: 1rem 0;
-	text-align: center;
-	font-weight: 800;
-	font-size: 1.5rem;
-}
-.nav-buttons {
-	display: flex;
-	justify-content: stretch;
-}
-.nav-button {
-	@include transition;
-	padding: 3rem 0;
-	color: #000;
-	background-color: #ffea2a;
-	width: 100%;
-	/*margin: 0 4px;*/
-	text-align: center;
-	/*background-color: #fff;*/
-	/*border: 1px solid #ccc;*/
-	float: left;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 1.5rem;
-	border-radius: 3px;
-	/*box-shadow: 2px 2px 5px #ccc;*/
-	&:hover {
-		background-color: #fdab55;
-		border: 1px solid #fdab55;
-		color: #fff;
-	}	
-/*	&:first-child {margin-left: 0;}
-	&:last-child {margin-right: 0;}*/
-}
-.column {
-	width: 50%;
-	display: inline;
-	padding-bottom: .5rem;
-}
-.column-inner.left {
-	width: 30%;
-}
-.column-inner.right {
-	width: 70%;
-}
-.img-resize {
-	height: 100%;
-	width: 100%;
-}
-.left {float: left;}
-.right {float: right;}
-.center {margin: 0 auto ; text-align: center;}
-.clear {
-	clear: both;
-}
-.button.right {
-	margin-left: 2rem;
-}
-hr {
-	margin: 0 0 $page-margin 0;
-	border-top: 1px solid #ddd;
-	border-bottom: none;
-}
-.text-wrap {
-	padding: 0 1rem;
-}
-h2.strong {
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 1rem;
-	color: #000;
-}
-.mail-box {
-	padding: 24px;
-	border: 1px solid #ddd;
-	margin: -46px auto 0 -124px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200px;
-	text-align: center;
-}
-footer {
-	display: block;
-	padding: 1rem $page-margin;
-	border-top: 1px solid #ddd;
-}
-.button-wrap {
-	display: inline-block;
-	width: 100%;
-}
 
-.chevron-up {
-	display: block;
-	margin: 0 auto 2px auto;
-}
-#myBtn {
-  @include transition;
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  
-  border: 1px solid #ccc;
-  color: #ccc; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: .5em .75em; /* Some padding */
-  border-radius: 6px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
+/*===========================================================
+#media-queries
+===========================================================*/
 
 @media only screen and (max-width : 960px) {
-	/** {background-color: rgba(255,0,0,0.3);}*/
-	// #logo {margin: 28px;}
 	.flex-wrap {
-		display: initial;
+		/*display: initial;*/
 	}
 	.page-view img {
 		max-width: 600px;
@@ -524,27 +534,18 @@ footer {
 		margin-top: 0;
 		padding-bottom: 6rem;
 	}
-	#sidebar ul {
-
-	}
 	#header nav ul li {display: none;}
 	#header .offcanvas ul li {display: block;}
 	#hamburger {
 	    cursor: pointer;
 	    display: inline;
 	    float: right;
-	    // height: 1.5em;
 	    padding: 18px 0;
 	    width: 1.5em;
-	}
-	#hamburger:hover {
-		// background-color: #f4f4f4;
 	}
 	#hamburger div {
 	    background-color: #000;
 	    border: 1px solid #000;
-	    // border-radius: 0.125em;
-	    // height: 0.125em;
 	    margin-top: 0.375em;
 	    width: 90%;
 	}
@@ -583,10 +584,9 @@ footer {
 	.chapter-index {
 		max-width: 288px;
 	}
-	#logo img {
+	#logo h1 {
 		max-width: 217px;
 		max-height: 17px;
-		margin-top: 17px;
 	}
 	#hamburger {
 		padding: 12px 0;
@@ -601,10 +601,6 @@ footer {
 		display: inline-block;
 		float: none;
 		margin: $page-margin / 2 auto;
-	}
-	.inner-wrap, .outer-wrap {
-		// height: auto;
-		// min-height: auto;
 	}
 	.bg-inner-wrap {
 		padding: 0;
@@ -621,20 +617,28 @@ footer {
 		font-size: 24px;
 		padding: .75rem;
 	}
+	.bg-inner-wrap {
+		background: url('../images/banner-1440-yellow.gif') no-repeat top center;
+		background-size: cover;
+		min-height: 300px;
+	}
+	.bg-inner-wrap img {
+		display: none;
+	}
 	#myBtn {
-		  bottom: 12px; /* Place the button at the bottom of the page */
-		  right: 12px; /* Place the button 30px from the right */
-		  border: none; /* Remove borders */
-		  outline: none; /* Remove outline */
-		  background-color: #fff !important;
-		  border: 1px solid #ccc;
-		  color: #ccc; /* Text color */
-		  cursor: pointer; /* Add a mouse pointer on hover */
-		  padding: 6px 8px; /* Some padding */
-		  border-radius: 6px; /* Rounded corners */
-		  font-size: 12px; /* Increase font size */
-		  text-transform: uppercase;
-		}	
+		bottom: 12px; /* Place the button at the bottom of the page */
+		right: 12px; /* Place the button 30px from the right */
+		border: none; /* Remove borders */
+		outline: none; /* Remove outline */
+		background-color: #fff !important;
+		border: 1px solid #ccc;
+		color: #ccc; /* Text color */
+		cursor: pointer; /* Add a mouse pointer on hover */
+		padding: 6px 8px; /* Some padding */
+		border-radius: 6px; /* Rounded corners */
+		font-size: 12px; /* Increase font size */
+		text-transform: uppercase;
+	}	
 }	
 
 
