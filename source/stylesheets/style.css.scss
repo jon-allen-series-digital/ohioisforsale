@@ -4,7 +4,7 @@ $primary-color: #efeee6;
 $font-stack:    'Helvetica', sans-serif;
 $header-height: 60px;
 $page-margin: 1.25rem;
-$color-yellow: #f6bc45;
+$color-yellow: #f0c902;
 $color-orange: #f08900;
 $button-action: $color-yellow;
 
@@ -493,18 +493,29 @@ nav li a:hover {
 ===========================================================*/
 
 .chapter-index {
-	width: 1056px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+}
+.chapter-index .row {
+	margin-left: $page-margin;
+	margin-right: $page-margin;
 }
 .chapter-panel {
-	margin: $page-margin / 2;
+	display: inline-block;
+	width: 100%;
+}
+.chapter-panel-image {
 	display: inline;
 	float: left;
+	margin: 0 $page-margin $page-margin 0;
+}
+.chapter-panel p {
+	display: inline;
+	float: left;
+	max-width: 340px;
 }
 .section {
-	height: 240px;
-	width: 240px;
+	height: 280px;
+	width: 280px;
 	display: inline;
 	float: left;
 }
@@ -513,8 +524,8 @@ nav li a:hover {
 }
 .chapter-panel .section img:hover {
 	@include transition;
-	height: 246px;
-	width: 246px;
+	height: 286px;
+	width: 286px;
 	margin-top: -3px;
 	margin-left: -3px;
 }
@@ -569,12 +580,13 @@ nav li a:hover {
 }
 @media only screen and (max-width : 1055px) {
 	.chapter-index {
-		max-width: 792px;
+		max-width: 100%;
+
 	}
 }
 @media only screen and (max-width : 791px) {
 	.chapter-index {
-		max-width: 528px;
+		max-width: 100%;
 	}
 }
 @media only screen and (max-width : 527px) {
@@ -583,7 +595,7 @@ nav li a:hover {
 		height: 50px;
 	}
 	.chapter-index {
-		max-width: 288px;
+		max-width: 100%;
 	}
 	#logo h1 {
 		max-width: 217px;
@@ -595,13 +607,12 @@ nav li a:hover {
 	.page-view {
 		margin-top: 40px;
 	}
-	.section img {
-		max-width: 300px;
-	}
 	.chapter-panel {
-		display: inline-block;
-		float: none;
-		margin: $page-margin / 2 auto;
+		text-align: center;
+		/*max-width: 240px;*/
+		/*display: inline-block;*/
+		/*float: none;*/
+		/*margin: $page-margin / 2 auto;*/
 	}
 	.bg-wrap {
 		margin-top: 50px;

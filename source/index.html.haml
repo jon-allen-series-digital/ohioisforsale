@@ -4,14 +4,15 @@ title: ''
 
 .bg-wrap
 	.bg-inner-wrap
-		= image_tag '/images/banner-1440-yellow.gif', :class=>'bg-img'
-	.button-container.flex--center
-		.button.action-button.button-large
-			= link_to "Read From The Beginning", "chapter-one/index.html"
+		= image_tag '/images/banner-1440.gif', :class=>'bg-img'
+	/ .button-container.flex--center
+	/ 	.button.action-button.button-large
+	/ 		= link_to "Chapter Index", "/chapterindex.html"
 .clear
-%hr
+
 
 .page-wrap
+	%hr
 	.column.left.column-outer
 	
 		.column.left.column-inner
@@ -28,14 +29,15 @@ title: ''
 
 	.column.left.column-outer
 		.column.left.column-inner
-			= image_tag '/images/lonesome_era_cover.gif', :class=>'img-resize'
+			= image_tag '/images/lonesome_era_cover_large.gif', :class=>'img-resize'
 
 		.column.right.column-inner
 			.text-wrap
 				%h2.strong News
-				%p I am excited to announce that my second graphic novel, The Lonesome Era, is coming out in October 2019 through Iron Circus Comics. This is a story about Camden, a hapless high schooler who’s got a crush on his straight best friend. This book collects issues 8, 10, and 11 of Ohio Is For Sale, with nearly 200 pages of new material to complete the story. 
-
-				%p I’ll be signing advance copies of the book at FlameCon this August in Brooklyn, NY. Come by and check it out!
+				%p 
+					August 17, 2019 — I’ll be signing advance copies of my new book at 
+					= link_to "FlameCon", "https://www.flamecon.org/"
+					in Times Square!
 
 				.button.action-button
 					= link_to "Read a preview", "lonesome-era-preview/index.html"
@@ -53,7 +55,19 @@ title: ''
 
 				.button.action-button 
 					= link_to 'Buy the book', 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'blank'		
+	.column.left.column-outer
+		.column.left.column-inner
+			= image_tag '/images/cover-large-1.jpg', :class=>'img-resize'
 
+		.column.right.column-inner
+			.text-wrap
+				%h2.strong Chapter Index
+				%p A bunch of issues are here for free.
+
+				.button.action-button
+					= link_to "Read some comics", "/chapterindex.html"	
+
+	%hr.mobile-hide		
 	.column.left.column-outer
 		.column.left.column-inner
 			= image_tag '/images/theartist.gif', :class=>'img-resize'
@@ -64,5 +78,6 @@ title: ''
 				%p Follow me on social media, buy some comics, or just throw me a few bucks.
 
 				.button.action-button
-					= link_to "Support the artist", "/support.html"					
+					= link_to "Support the artist", "/support.html"		
+									
 .clear				

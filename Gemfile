@@ -15,3 +15,5 @@ gem 'middleman-search_engine_sitemap'
 gem "sprockets", ">= 2.12.5"
 gem "rack", ">= 1.6.11"
 gem "ffi", ">= 1.9.24"
+
+gem 'middleman-minify-html'
