@@ -97,7 +97,7 @@ body {
 	min-height: 100vh;
 	display: flex;
 	align-items: stretch;
-	flex-direction: row-reverse;
+	/*flex-direction: row-reverse;*/
 }
 .page-wrap {
 	display: block;
@@ -376,8 +376,12 @@ hr {
 	background-color: #444;
 }
 #sidebar li.selected {
-	border-left: .3rem solid #444;
-	padding-left: .7rem;
+	/*border-left: .3rem solid #444;*/
+	/*padding-left: .7rem;*/
+	background-color: #333;
+	&:hover {
+		background-color: #444;
+	}	
 }
 #sidebar hr {
 	margin-bottom: 1px;
@@ -536,15 +540,31 @@ nav li a:hover {
 
 @media only screen and (max-width : 960px) {
 	.flex-wrap {
-		/*display: initial;*/
+		display: initial;
 	}
 	.page-view img {
 		max-width: 600px;
 	}
 	#sidebar {
 		width: 100%;
-		margin-top: 0;
-		padding-bottom: 6rem;
+		/*margin-top: 0;*/
+		/*padding-bottom: 6rem;*/
+		h2 {
+			line-height: 14px;
+		}
+		hr {
+			display: none;
+		}
+		li {
+			display: inline;
+			float: left;
+			height: 60px;
+			margin: 0;
+			padding: 0;
+		}
+		.sidebar-links a {
+			padding: 22px;
+		}
 	}
 	#header nav ul li {display: none;}
 	#header .offcanvas ul li {display: block;}
@@ -593,6 +613,9 @@ nav li a:hover {
 	#header {
 		position: fixed;
 		height: 50px;
+	}
+	#sidebar {
+		margin-top: 50px;
 	}
 	.chapter-index {
 		max-width: 100%;
