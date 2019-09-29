@@ -16,8 +16,8 @@ title: ''
 	.column.left.column-outer
 	
 		.column.left.column-inner
-		
-			= image_tag '/images/cover-large-julian.jpg', :class=>'img-resize'
+			= link_to 'julian-in-purgatory/1/index.html' do
+				= image_tag '/images/cover-large-julian.jpg', :class=>'img-resize'
 		.column.right.column-inner
 			.text-wrap
 				%h2.strong Read the latest thing
@@ -25,11 +25,12 @@ title: ''
 					Julian's girlfriend kicks him out, and now he's out of money & drugs with no place to crash. Parts one and two (of three) now up!
 
 				.button.action-button 
-					= link_to 'Read this one', 'julian-in-purgatory/index.html'
+					= link_to 'Read this one', 'julian-in-purgatory/1/index.html'
 
 	.column.left.column-outer
 		.column.left.column-inner
-			= image_tag '/images/lonesome_era_cover_large.gif', :class=>'img-resize'
+			= link_to "https://www.facebook.com/events/2524386771126146/", :target=>'blank' do
+				= image_tag '/images/lonesome_era_cover_large.gif', :class=>'img-resize'
 
 		.column.right.column-inner
 			.text-wrap
@@ -63,8 +64,8 @@ title: ''
 	%hr.mobile-hide		
 	.column.left.column-outer
 		.column.left.column-inner
-		
-			= image_tag '/images/cover.jpg', :class=>'img-resize'
+			= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'blank' do
+				= image_tag '/images/cover.jpg', :class=>'img-resize'
 		.column.right.column-inner
 			.text-wrap
 				%h2.strong Buy the book
@@ -75,7 +76,8 @@ title: ''
 					= link_to 'Buy the book', 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'blank'		
 	.column.left.column-outer
 		.column.left.column-inner
-			= image_tag '/images/cover-large-1.jpg', :class=>'img-resize'
+			= link_to "/chapterindex.html" do
+				= image_tag '/images/cover-large-1.jpg', :class=>'img-resize'
 
 		.column.right.column-inner
 			.text-wrap
@@ -88,7 +90,8 @@ title: ''
 	%hr.mobile-hide		
 	.column.left.column-outer
 		.column.left.column-inner
-			= image_tag '/images/theartist.gif', :class=>'img-resize'
+			= link_to "/support.html" do
+				= image_tag '/images/theartist.gif', :class=>'img-resize'
 
 		.column.right.column-inner
 			.text-wrap

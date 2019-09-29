@@ -357,7 +357,7 @@ hr {
 }
 #sidebar h2 {
 	color: #fff;
-	padding: 8px 0;
+	padding: 23px 22px;
 	font-size: 16px;
 	font-weight: bold;
 }
@@ -367,12 +367,11 @@ hr {
 	display: block;
 	float: none;
 	@include transition;
-	padding-left: 1rem;
 	font-size: .875rem;
 	font-weight: 400;
 
 }
-#sidebar li:hover {
+#sidebar li a:hover {
 	background-color: #444;
 }
 #sidebar li.selected {
