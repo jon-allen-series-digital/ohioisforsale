@@ -18,7 +18,7 @@ page "/chapter-one/*", :layout => "layout-page"
 page "/chapter-two/*", :layout => "layout-page"
 page "/chapter-six/*", :layout => "layout-page"
 page "/chapter-nine/*", :layout => "layout-page"
-page "/julian-in-purgatory/*", :layout => "layout-page-sidebar-julian"
+page "/julian-in-purgatory/*", :layout => "layout-page"
 page "/lonesome-era-preview/*", :layout => "layout-page"
 
 #=======================================================================
@@ -42,8 +42,7 @@ create_pages(54, "chapter-one", "a");
 create_pages(50, "chapter-two", "b");
 create_pages(49, "chapter-six", "b");
 create_pages(112, "chapter-nine", "b");
-create_pages(72, "julian-in-purgatory/1", "b");
-create_pages(84, "julian-in-purgatory/2", "b");
+create_pages(72, "julian-in-purgatory", "b");
 create_pages(14, "lonesome-era-preview", "b");
 
 redirect "chapter-one/01.html", to: "chapter-one/1.html"
