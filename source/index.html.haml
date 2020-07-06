@@ -14,7 +14,55 @@ title: ''
 .page-wrap
 	%hr
 	.column.left.column-outer
-	
+		%h4 Books
+		.row
+			.link-card
+				.column.left.column-inner
+					= link_to "https://www.facebook.com/events/2524386771126146/", :target=>'blank' do
+						= image_tag '/images/lonesome_era_cover_large.gif', :class=>'img-resize'
+
+				.column.right.column-inner
+					.text-wrap
+						%h2.strong The Lonesome Era
+						%p 
+							My new book is now available from Iron Circus!
+						%p	
+							(Also available in e-format)
+
+						/ .button.action-button
+						/ 	= link_to "Buy the book", "https://ironcircus.com/product/the-lonesome-era/", :target=>'blank'
+		.row
+			.link-card
+				.column.left.column-inner
+					= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'blank' do
+						= image_tag '/images/cover.jpg', :class=>'img-resize'
+				.column.right.column-inner
+					.text-wrap
+						%h2.strong Ohio Is For Sale
+						%p Issues 1 - 5 collected into one big book, published by Alternative Comics.
+
+
+						/ .button.action-button 
+						/ 	= link_to 'Buy the book', 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'blank'	
+
+		.row
+			.link-card
+				.column.left.column-inner
+					= link_to "https://www.facebook.com/events/2524386771126146/", :target=>'blank' do
+						= image_tag '/images/cover-large-1.jpg', :class=>'img-resize'
+
+				.column.right.column-inner
+					.text-wrap
+						%h2.strong Individual Issues
+						%p 
+							Individual issues of Ohio Is For Sale... are for sale.								
+
+
+	.column.right.column-outer
+		%h4 Store
+				
+		
+	.column.right.column-outer						
 		.column.left.column-inner
 			= link_to 'julian-in-purgatory/1/index.html' do
 				= image_tag '/images/cover-large-julian.jpg', :class=>'img-resize'
@@ -27,37 +75,8 @@ title: ''
 				.button.action-button 
 					= link_to 'Read the first chapter', 'julian-in-purgatory/index.html'
 
-	.column.left.column-outer
-		.column.left.column-inner
-			= link_to "https://www.facebook.com/events/2524386771126146/", :target=>'blank' do
-				= image_tag '/images/lonesome_era_cover_large.gif', :class=>'img-resize'
+	
 
-		.column.right.column-inner
-			.text-wrap
-				%h2.strong New book is out!
-				%p 
-					My new book is now available!
-					Go to
-					= link_to "Iron Circus", "https://ironcircus.com/product/the-lonesome-era/", :target=>'blank'
-					and grab a copy! (Also available in e-format)
-
-				.button.action-button
-					= link_to "Buy the book", "https://ironcircus.com/product/the-lonesome-era/", :target=>'blank'
-
-	%hr.mobile-hide		
-	.column.left.column-outer
-		.column.left.column-inner
-			= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'blank' do
-				= image_tag '/images/cover.jpg', :class=>'img-resize'
-		.column.right.column-inner
-			.text-wrap
-				%h2.strong Buy the book
-				%p Issues 1 - 5 collected into one big book, published by Alternative Comics.
-
-
-				.button.action-button 
-					= link_to 'Buy the book', 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'blank'		
-	.column.left.column-outer
 		.column.left.column-inner
 			= link_to "/chapterindex.html" do
 				= image_tag '/images/cover-large-1.jpg', :class=>'img-resize'
