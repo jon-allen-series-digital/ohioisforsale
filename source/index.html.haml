@@ -2,105 +2,84 @@
 title: ''
 ---
 
-.bg-wrap
-	.bg-inner-wrap
-		= image_tag '/images/banner-6-4-7.gif', :class=>'bg-img'
-	/ .button-container.flex--center
-	/ 	.button.action-button.button-large
-	/ 		= link_to "Chapter Index", "/chapterindex.html"
-.clear
+/ .bg-wrap
+/ 	.bg-inner-wrap
+/ 		= image_tag '/images/banner-6-4-7.gif', :class=>'bg-img'
+/ 	/ .button-container.flex--center
+/ 	/ 	.button.action-button.button-large
+/ 	/ 		= link_to "Chapter Index", "/chapterindex.html"
+/ .clear
 
 
-.page-wrap
-	%hr
-	.column.left.column-outer
-		%h4 Books
-		.row
-			.link-card
-				.column.left.column-inner
-					= link_to "https://www.facebook.com/events/2524386771126146/", :target=>'blank' do
-						= image_tag '/images/lonesome_era_cover_large.gif', :class=>'img-resize'
-
-				.column.right.column-inner
-					.text-wrap
-						%h2.strong The Lonesome Era
-						%p 
-							My new book is now available from Iron Circus!
-						%p	
-							(Also available in e-format)
-
-						/ .button.action-button
-						/ 	= link_to "Buy the book", "https://ironcircus.com/product/the-lonesome-era/", :target=>'blank'
-		.row
-			.link-card
-				.column.left.column-inner
-					= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'blank' do
-						= image_tag '/images/cover.jpg', :class=>'img-resize'
-				.column.right.column-inner
-					.text-wrap
-						%h2.strong Ohio Is For Sale
-						%p Issues 1 - 5 collected into one big book, published by Alternative Comics.
-
-
-						/ .button.action-button 
-						/ 	= link_to 'Buy the book', 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'blank'	
-
-		.row
-			.link-card
-				.column.left.column-inner
-					= link_to "https://www.facebook.com/events/2524386771126146/", :target=>'blank' do
-						= image_tag '/images/cover-large-1.jpg', :class=>'img-resize'
-
-				.column.right.column-inner
-					.text-wrap
-						%h2.strong Individual Issues
-						%p 
-							Individual issues of Ohio Is For Sale... are for sale.								
-
-
-	.column.right.column-outer
-		%h4 Store
-				
-		
-	.column.right.column-outer						
-		.column.left.column-inner
-			= link_to 'julian-in-purgatory/1/index.html' do
-				= image_tag '/images/cover-large-julian.jpg', :class=>'img-resize'
-		.column.right.column-inner
-			.text-wrap
-				%h2.strong Check out next thing
-				%p 
-					Julian's girlfriend kicks him out, and now he's out of money & drugs with no place to crash. Read the first chapter now!
-
-				.button.action-button 
-					= link_to 'Read the first chapter', 'julian-in-purgatory/index.html'
-
+.content-row
 	
+	.column
+		%h4 Books
+		
+		.link-card
+			= link_to "https://ironcircus.com/?product=the-lonesome-era", :target=>'blank' do
+				.img	
+					= image_tag '/images/img_5054.jpg', :class=>'img-resize'
 
-		.column.left.column-inner
-			= link_to "/chapterindex.html" do
-				= image_tag '/images/cover-large-1.jpg', :class=>'img-resize'
+				.text-wrap
+					%h2.strong The Lonesome Era
 
-		.column.right.column-inner
-			.text-wrap
-				%h2.strong Chapter Index
-				%p A bunch of issues are here for free.
+					%p Camden is crushing hard on his best buddy and all-around bad influence, Jeremiah. Young, bored, and trapped in a decomposing Rust Belt town, he goes along with every awful idea, every hair-brained plan, and every threat to life and limb Jeremiah can come up with. But how much longer can this go on?
+					%p Published in 2019 by Iron Circus.
+				
+	.column
+		%h4 &nbsp;
+			
+		.link-card
+			= link_to 'http://indyworld.com/imprints/alternative-comics/jon-allen/ohio-is-for-sale/', :target=>'blank' do
+				.img	
+					= image_tag '/images/img_5055.jpg', :class=>'img-resize'
+				.text-wrap
+					%h2.strong Ohio Is For Sale
+					
+					%p Three cartoon animals live together in the American midwest. They get a job, get sick, and throw a party. Their lives are lit by street lamps and the flickering TV set. Five stories about friendship, booze, and the slow collapse of western civilization.
 
-				.button.action-button
-					= link_to "Read some comics", "/chapterindex.html"	
+					%p Published in 2016 by Alternative Comics.
 
-	%hr.mobile-hide		
-	.column.left.column-outer
-		.column.left.column-inner
-			= link_to "/support.html" do
-				= image_tag '/images/theartist.gif', :class=>'img-resize'
+	.column
+		%h4 &nbsp;
+			
+		.link-card
+			= link_to "https://ohioisforsale.bigcartel.com/", :target=>'blank' do
+				.img	
+					= image_tag '/images/img_5056.jpg', :class=>'img-resize'
 
-		.column.right.column-inner
-			.text-wrap
-				%h2.strong Support
-				%p Follow me on social media, buy some comics, or just throw me a few bucks.
+				.text-wrap
+					%h2.strong Single Issues
+					%p 
+						Check out my BigCartel store for individual issues of Ohio Is For Sale.
 
-				.button.action-button
-					= link_to "Support the artist", "/support.html"		
-									
+
+.content-row
+
+	.column
+		%h4 Read Some Stuff For Free
+		
+		.link-card
+			= link_to '/chapterindex.html' do			
+				.img
+					= image_tag '/images/julianbytheriver.png', :class=>'img-resize'
+
+				.text-wrap
+					%p Read the first issue of Ohio Is Sale, a sample chapter of my next book, and more.
+
+
+
+	.column
+		%h4 Follow me On Instagram
+		
+		.link-card
+			= link_to "https://www.instagram.com/ohioisforsale/", :target=>'blank' do
+				.img
+					= image_tag '/images/theartist.gif', :class=>'img-resize'
+				.text-wrap
+					%p Follow me on Instagram to see sketches, new comics, and lots of other random stuff.				
+	.column		
+
+								
 .clear				

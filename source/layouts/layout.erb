@@ -14,6 +14,8 @@
     <%= favicon_tag '/images/favicon.ico' %> 
     <%= stylesheet_link_tag "style" %>
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -51,7 +53,11 @@
          </div> 
 
           <div id="main" role="main">
-            <%= yield %>
+            <div class="page-wrap">
+              <div class="top"></div>
+              <%= yield %>
+              
+            </div>
           </div>
           <%= partial "partials/footer" %>
         </div>
