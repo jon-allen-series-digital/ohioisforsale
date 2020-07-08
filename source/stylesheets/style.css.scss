@@ -167,18 +167,19 @@ body {
 }
 .link-card {
 	@include transition;
-	/*border-radius: 6px;*/
+	border-radius: 6px;
 	/*margin: 0 $page-margin*1.5 0 0 ;*/
 	height: 100%;
 	background-color: #fff;
-	border: 1px solid #ddd;
+	border: 1px solid #cdcdcd;
 	display: inline-block;
+	box-shadow: 2px 2px 6px #ededed;
 	/*margin-bottom: -44px;*/
 	/*padding: 1rem;*/
 	/*margin: $page-margin / 2 0;*/
 	&:hover {
 		cursor: pointer;
-		box-shadow: 2px 2px 6px #ccc;
+		box-shadow: 2px 2px 6px #cdcdcd;
 	}
 }
 .link-card a {
@@ -194,6 +195,7 @@ body {
 .img-resize {
 	height: 100%;
 	width: 100%;
+	border-radius: 4px 4px 0 0;
 }
 .left {float: left;}
 .right {float: right;}
