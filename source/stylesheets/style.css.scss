@@ -207,6 +207,20 @@ body {
 	padding: $page-margin;
 }
 
+.banner {
+	width: 100%;
+	display: inline-block;
+	
+	background-color: $color-yellow;
+	h1 {
+		/*display: block;*/
+		/*float: left;*/
+		padding: $page-margin;
+		margin: 0;
+		/*line-height: 40px;*/
+	}
+}
+
 /*===========================================================
 #buttons
 ===========================================================*/
