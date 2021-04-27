@@ -153,7 +153,8 @@ body {
 	margin:  auto;
 }
 .page-wrap.about {
-	padding: 0 $page-margin * 16;
+	max-width: 50%;
+	margin: 0 auto;
 }
 .top {
 	display: block;
@@ -179,6 +180,34 @@ body {
 .column-outer {
 	width: 50%;
 	display: inline-block;
+}
+.portrait {
+	float: left;
+	display: inline;
+	width: 144px;
+	padding: $page-margin/2;
+	border-radius: 6px;
+	background-color: #fff;
+	border: 1px solid #cdcdcd;
+	margin-right: $page-margin;
+	margin-bottom: $page-margin;
+	box-shadow: 2px 2px 6px #ededed;
+	img {
+		height: 144px;
+		width: 144px;
+		display: block;
+		margin-bottom: 8px;
+	}
+	label {
+		font-size: 16px;
+		display: block;
+		font-weight: 600;
+	}
+}
+.portrait.portrait-right {
+	float: right;
+	margin-right: 0;
+	margin-left: $page-margin;
 }
 .link-card {
 	@include transition;
@@ -762,6 +791,10 @@ nav li a:hover {
 		padding: .5rem 0;
 		margin: 0 0 6px 0;
 	}
+	.page-wrap.about {
+		max-width: 80%;
+		margin: 0 auto;
+	}	
 }
 /*
 @media only screen and (max-width : 768px) {
@@ -820,6 +853,10 @@ nav li a:hover {
 		width: 100%;
 		display: block;
 		padding-bottom: 1rem;
+	}	
+	.page-wrap.about {
+		max-width: 100%;
+		margin: 0 auto;
 	}	
 /*	.text-wrap {
 		padding: 0;
