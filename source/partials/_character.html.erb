@@ -1,0 +1,33 @@
+<% data.characters.each do |f| %>
+	<div class="row">
+		<div class="column left">
+			<%= image_tag f[1].image, :class => "img-resize" %>
+		</div>
+		<div class="column-inner right">
+			<h2 class="strong">
+				<%= f[1].name %>
+			</h2>	
+			<ul>
+				<li>
+					<strong>Age:</strong>
+					<%= f[1].age %>
+				</li>
+				<li>
+					<strong>First Appearance:</strong>
+					<%= f[1].first_appearance %>
+				</li>
+				<li>
+					<strong>Notable Appearance:</strong>
+					<%= f[1].notable_appearance %>
+				</li>
+				<li>
+					<strong>Species:</strong>
+					<%= f[1].species %>
+				</li>	
+			</ul>
+			<p>
+				<%= f[1].description %>
+			</p>
+		</div>
+	</div>
+<% end %>

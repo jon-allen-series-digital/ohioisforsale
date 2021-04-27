@@ -95,6 +95,15 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+.bg-inner-wrap {
+	background: url('../images/banner-6-4-7.gif') no-repeat top center;
+	background-size: cover;
+	min-height: 480px;
+	display: block;
+	width: 100vw;
+	margin-top: -40px;
+
+}
 #main {
 	/*padding-top: 100px;*/
 	min-height: 100vh;
@@ -120,7 +129,7 @@ body {
 	/*justify-content: center;*/
 	/*align-content: space-around;*/
 	/*margin-top: $page-margin * 2;*/
-	margin-bottom: $page-margin * 2;
+	margin: $page-margin*2 0;
 }
 .outer-wrap {
 	position: relative;
@@ -140,8 +149,11 @@ body {
 }
 .page-wrap {
 	display: block;
-	padding: 0 $page-margin * 6;
+	padding: 0 $page-margin * 2;
 	margin:  auto;
+}
+.page-wrap.about {
+	padding: 0 $page-margin * 16;
 }
 .top {
 	display: block;
@@ -160,6 +172,9 @@ body {
 /*	display: inline;
 	float: left;*/
 	/*padding-bottom: $page-margin / 2;*/
+}
+.column-double {
+	width: 66%;
 }
 .column-outer {
 	width: 50%;
@@ -376,6 +391,10 @@ h1 {
 	font-weight: 800;
 	font-size: 1.5rem;
 }
+h1.left {
+	float: none;
+	text-align: left;
+}
 h3 {
 	font-size: 2rem;
 	font-weight: bold;
@@ -393,7 +412,26 @@ h4 {
 p {
   margin-bottom: 1em;
 }
-.strong {
+.about p {
+	font-size: 18px;
+	line-height: 24px;
+}
+.about ul {
+	margin-bottom: $page-margin;
+}
+.about ul li {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 4px;
+}
+.about .row {
+	margin-bottom: $page-margin * 2;
+}
+.about .row a {
+	color: #514f54;
+	text-decoration: underline;
+}
+.strong, strong {
   font-weight: 800;
 }
 a {
@@ -776,6 +814,7 @@ nav li a:hover {
 	}
 	.bg-inner-wrap {
 		padding: 0;
+		margin-top: -50px;
 	}
 	.column, .column-inner.left, .column-inner.right {
 		width: 100%;

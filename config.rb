@@ -2,6 +2,8 @@
 
 page "/feed.xml", layout: false
 
+set :check_default_type, false
+
 activate :directory_indexes
 
 activate :relative_assets
@@ -20,6 +22,9 @@ page "/chapter-six/*", :layout => "layout-page"
 page "/chapter-nine/*", :layout => "layout-page"
 page "/julian-in-purgatory/*", :layout => "layout-page"
 page "/lonesome-era-preview/*", :layout => "layout-page"
+
+
+
 
 #=======================================================================
 # Ohio Is For Sale

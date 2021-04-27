@@ -1,0 +1,79 @@
+patrick:
+  name: Patrick
+  image: "characters/img-patrick.jpg"
+  age: 22
+  first_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-1' target='_blank'>Ohio #1</a>"
+  notable_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-4' target='_blank'>Ohio #4</a>; <a href='https://ohioisforsale.bigcartel.com/product/twelve-miles-from-akron' target='_blank'>Twelve Miles From Akron</a>"
+  species: Cat
+  description: "Patrick is the first character to appear in Ohio Is For Sale, and I use him as a way to express my own creative ambitions and frustrations. He’s an aspiring writer who hasn’t done much with his life, and he worries that he has nothing to write about and nothing to say. He lives in a dumpy little house on the edge of town with his two friends from high school."
+  
+leonard:
+  name: Leonard
+  image: "characters/img-leonard.jpg"
+  age: 22
+  first_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-1' target='_blank'>Ohio #1</a>"
+  notable_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-2' target='_blank'>Ohio #2</a>"
+  species: Dog
+  description: "Leonard is one of Patrick’s two housemates. He’s not exactly dumb, but he has kind of a limited way of looking at the world. His dad is an electrician and his family is secretly kind of well-off. When he and Patrick were younger they liked to get into trouble together, but now that they’re a little older, they don’t have much to say to each other anymore. Patrick doesn’t really understand him that well and frankly, neither do I."
+
+trevor:
+  name: Trevor
+  image: "characters/img-trevor.jpg"
+  age: 22
+  first_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-1' target='_blank'>Ohio #1</a>"
+  notable_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-3' target='_blank'>Ohio #3</a>"
+  species: Lizard
+  description: "Trevor is Patrick’s other housemate and he’s super dumb and maybe slightly insane. In school he was the kind of kid who would eat weird stuff on a dare, or set himself on fire for fun, or leave a dead animal in the teacher’s desk. He’ll probably be dead before he turns thirty."
+
+julian:
+  name: Julian
+  image: "characters/img-julian.jpg"
+  age: 23
+  first_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-5' target='_blank'>Ohio #5</a>"
+  notable_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/julian-in-purgatory' target='_blank'>Julian In Purgatory</a>"
+  species: Raccoon
+  description: "Julian is another one of Patrick’s friends. He doesn’t really get along with Leonard and Trevor at all, partially because he’s dating Leonard’s sister. He and Patrick became pals when they were always hanging around outside smoking cigarettes in the school parking lot. His dad is the former mayor of Piney Bluff. Julian’s had plenty of opportunities to make something of his life and he’s squandered them all. He’s lazy, parasitic, dishonest and has a mildly concerning drug problem."
+
+dana:
+  name: Dana
+  image: "characters/img-dana.jpg"
+  age: 24
+  first_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-5' target='_blank'>Ohio #5</a>"
+  notable_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/julian-in-purgatory' target='_blank'>Julian In Purgatory</a>"
+  species: Dog
+  description: "Dana is Julian’s girlfriend and Leonard’s older sister. She’s a caring and thoughtful person, but she can also be too trusting for her own good, which makes it easy for Julian to take advantage of her. She lives in a little house that her parents rent for her, and that Julian lives in, mostly rent-free. She hasn’t gotten to star in her own story yet, but hopefully someday she will."
+
+veronika:
+  name: Veronika
+  image: "characters/img-veronika.jpg"
+  age: 24
+  first_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-5' target='_blank'>Ohio #5</a>"
+  notable_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-6' target='_blank'>Ohio #6</a>"
+  species: Cat
+  description: "Veronika is Dana’s best friend. After dropping out of college, she moved home in with her parents, and all she wants to do now is get out of there. She studied computer programming and worked doing data entry for a while, but she’s currently unemployed. The new story is all about how she gets a new job and starts moving on with her life. Out of all my characters, she’s probably the smartest."
+
+matt:
+  name: Matt
+  image: "characters/img-matt.jpg"
+  age: 23
+  first_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-5' target='_blank'>Ohio #5</a>"
+  species: Bear
+  description: "Matt is Veronika’s boyfriend, and the lead singer in a local death metal band called Carnosphere. He’s kind of gross and kind of a moron, but he knows how to have a good time, for whatever that’s worth."
+
+camden:
+  name: Camden
+  image: "characters/img-camden.jpg"
+  age: 17
+  first_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-6' target='_blank'>Ohio #6</a>"
+  notable_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/the-lonesome-era' target='_blank'>Lonesome Era</a>"
+  species: Cat
+  description: Camden is Veronika’s younger brother. He lives at home with their parents and goes to Piney Bluff high school. He likes death metal and skateboarding and he’s gay. He has an unreciprocated crush on his straight best friend, Jeremiah.
+
+jeremiah:
+  name: Jeremiah
+  image: "characters/img-jeremiah.jpg"
+  age: 17
+  first_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-6' target='_blank'>Ohio #6</a> (You may think you saw him in the background of Ohio #5, but that was Jeremiah’s older brother Kevin, who happened to be in town that night.)"
+  notable_appearance: "<a href='https://ohioisforsale.bigcartel.com/product/the-lonesome-era' target='_blank'>Lonesome Era</a>"
+  species: Monkey
+  description: "Jeremiah is Camden’s best friend. While Camden is quiet and studious, Jeremiah is a troublemaker and a delinquent. They spend their time hanging around the 7/11, playing video games, and skateboarding."
