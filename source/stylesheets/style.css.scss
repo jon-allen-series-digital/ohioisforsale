@@ -153,7 +153,7 @@ body {
 	margin:  auto;
 }
 .page-wrap.about {
-	max-width: 50%;
+	max-width: 48%;
 	margin: 0 auto;
 }
 .top {
@@ -457,7 +457,8 @@ p {
 	margin-bottom: $page-margin * 2;
 }
 .about .row a {
-	color: #514f54;
+	color: #000;
+	font-weight: 400;
 	text-decoration: underline;
 }
 .strong, strong {
