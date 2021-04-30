@@ -650,9 +650,10 @@ nav li a:hover {
 #offcanvas.active {
 	margin-right: 0px;
 }
-.inner-wrap.active {
-	margin-left: -250px;
+.inner-wrap.active, #header.active {
+	left: -250px;
 }
+
 #offcanvas li {
 	margin: 0 0 -1px 0;
 	display: block;

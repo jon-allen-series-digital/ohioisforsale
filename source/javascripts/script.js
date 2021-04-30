@@ -1,9 +1,11 @@
 $(document).ready(function(){
 
 $("#hamburger").click(function(){
+  $('#header').toggleClass('active');
 	$('.inner-wrap, #offcanvas').toggleClass('active');
 });
 $(window).resize(function() {
+  $('#header').removeClass('active'); 
 	$('.inner-wrap, #offcanvas').removeClass('active');
 });
 
