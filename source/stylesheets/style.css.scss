@@ -79,6 +79,7 @@ body {
 }
 .bg-inner-wrap {
 	padding: $page-margin;
+	margin-bottom: $page-margin * 2;
 }
 .bg-img {
 	display: block;
@@ -129,7 +130,7 @@ body {
 	/*justify-content: center;*/
 	/*align-content: space-around;*/
 	/*margin-top: $page-margin * 2;*/
-	margin: $page-margin*2 0;
+	margin-bottom: $page-margin * 2;
 }
 .outer-wrap {
 	position: relative;
@@ -415,7 +416,7 @@ article.post {
 ===========================================================*/
 
 h1 {
-	margin: 1rem 0;
+	margin-bottom: 1rem;
 	text-align: center;
 	font-weight: 800;
 	font-size: 1.5rem;
@@ -424,8 +425,13 @@ h1.left {
 	float: none;
 	text-align: left;
 }
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
 h3 {
-	font-size: 2rem;
+	font-size: 1rem;
 	font-weight: bold;
 	margin-bottom: 2rem;
 	text-align: center;
@@ -454,7 +460,7 @@ p {
 	margin-bottom: 4px;
 }
 .about .row {
-	margin-bottom: $page-margin * 2;
+	margin-bottom: $page-margin;
 }
 .about .row a {
 	color: #000;
@@ -814,6 +820,9 @@ nav li a:hover {
 		position: fixed;
 		height: 50px;
 	}
+	.top {
+		height: 72px;
+	}
 	#sidebar {
 		margin-top: 50px;
 	}
@@ -835,7 +844,7 @@ nav li a:hover {
 		padding: 12px 0;
 	}
 	.page-view {
-		margin-top: 40px;
+		margin-top: 72px;
 	}
 	.chapter-panel {
 		text-align: center;
@@ -889,6 +898,22 @@ nav li a:hover {
 		font-size: 12px; /* Increase font size */
 		text-transform: uppercase;
 	}	
+
+	.portrait {
+	width: 124px;
+	border-radius: 6px;
+	margin-right: $page-margin / 2;
+	margin-bottom: $page-margin / 2;
+		img {
+			height: 124px;
+			width: 124px;
+		}
+
+	}
+	.about p {
+		font-size: 16px;
+		line-height: 20px;
+	}
 	.mobile-hide { display: none; }
 }	
 

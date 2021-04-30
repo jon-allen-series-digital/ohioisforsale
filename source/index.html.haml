@@ -7,9 +7,37 @@ title: ''
 
 .page-wrap	
 
+
 	.content-row	
 		.column
-			%h4 Graphic Novels
+			%h2 About This Comic
+			
+			.link-card
+				= link_to "/about.html" do
+					.img	
+						= image_tag '/images/cover-large-1.gif', :class=>'img-resize'
+
+					.text-wrap
+						%h2.strong About Ohio Is For Sale
+
+						%p An overview of what this is all about, plus character bios.
+
+		.column.column-double
+			%h2.mobile-hide &nbsp;
+			
+			.link-card
+				= link_to "/work-in-progress.html" do
+					.img	
+						= image_tag '/images/veronika-banner-5.jpg', :class=>'img-resize'
+
+					.text-wrap
+						%h2.strong About the Thing I've Been Posting on Instagram Lately
+
+						%p I've been serializing a new comic on Instagram for the last few months. Check here for an ongoing plot synopsis and character list.	
+
+	.content-row	
+		.column
+			%h2 Graphic Novels
 			
 			.link-card
 				= link_to "https://ohioisforsale.bigcartel.com/product/julian-in-purgatory", :target=>'_blank' do
@@ -23,7 +51,7 @@ title: ''
 						%p Published in 2021 by Iron Circus.
 
 		.column
-			%h4 &nbsp;
+			%h2.mobile-hide &nbsp;
 			
 			.link-card
 				= link_to "https://ohioisforsale.bigcartel.com/product/the-lonesome-era", :target=>'_blank' do
@@ -37,7 +65,7 @@ title: ''
 						%p Published in 2019 by Iron Circus.
 					
 		.column
-			%h4 &nbsp;
+			%h2.mobile-hide &nbsp;
 				
 			.link-card
 				= link_to 'https://ohioisforsale.bigcartel.com/product/ohio-is-for-sale-the-book', :target=>'_blank' do
@@ -56,7 +84,7 @@ title: ''
 	.content-row
 
 		.column
-			%h4 Check Out The Store
+			%h2 Check Out The Store
 				
 			.link-card
 				= link_to "https://ohioisforsale.bigcartel.com/products", :target=>'_blank' do
@@ -68,7 +96,7 @@ title: ''
 							Check out my BigCartel store for books and individual issues of Ohio Is For Sale.
 
 		.column
-			%h4 Read Some Stuff For Free
+			%h2 Read Some Stuff For Free
 			
 			.link-card
 				= link_to '/chapterindex.html' do			
@@ -81,7 +109,7 @@ title: ''
 
 
 		.column
-			%h4 Follow Me On Instagram
+			%h2 Follow Me On Instagram
 			
 			.link-card
 				= link_to "https://www.instagram.com/ohioisforsale/", :target=>'_blank' do
@@ -93,30 +121,3 @@ title: ''
 
 									
 	.clear				
-
-/ 	.content-row	
-/ 		.column
-/ 			%h4 About This Comic
-			
-/ 			.link-card
-/ 				= link_to "/about.html" do
-/ 					.img	
-/ 						= image_tag '/images/cover-large-1.gif', :class=>'img-resize'
-
-/ 					.text-wrap
-/ 						%h2.strong About Ohio Is For Sale
-
-/ 						%p An overview of what this is all about, plus character bios.
-
-/ 		.column.column-double
-/ 			%h4 &nbsp;
-			
-/ 			.link-card
-/ 				= link_to "/work-in-progress.html" do
-/ 					.img	
-/ 						= image_tag '/images/veronika-banner-5.jpg', :class=>'img-resize'
-
-/ 					.text-wrap
-/ 						%h2.strong About the Thing I've Been Posting on Instagram Lately
-
-/ 						%p I've been serializing a new comic on Instagram for the last few months. Check here for an ongoing plot synopsis and character list.	
