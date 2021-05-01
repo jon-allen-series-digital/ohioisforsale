@@ -97,8 +97,8 @@ body {
   background-size: cover;
 }
 .bg-inner-wrap {
-	background: url('../images/banner-6-4-7.gif') no-repeat top center;
-	background-size: cover;
+	/*background: url('../images/banner-6-4-7.gif') no-repeat top center;*/
+	/*background-size: cover;*/
 	min-height: 480px;
 	display: block;
 	width: 100vw;
@@ -880,6 +880,7 @@ nav li a:hover {
 		background: url('../images/banner-6-4-7.gif') no-repeat top center;
 		background-size: cover;
 		min-height: 300px;
+		background: transparent;
 	}
 	.bg-inner-wrap img {
 		display: none;
