@@ -5,8 +5,12 @@ title: 'The Lonesome Era | '
 <div class='page-wrap'>
   <div class='page-view'>
     <div class='row'>
+     
+      <div class="button action-button full-width">
+      <%= link_to "Buy The Book", "https://ironcircus.com/?product=the-lonesome-era", :target=>'_blank' %>  
+     </div>
 
-      <%= image_tag '/images/lonesome_era_cover_large.gif' %>
+      <div><%= image_tag '/images/lonesome_era_cover_large.gif' %></div>
       
       <div class="container">
         <article class="post">
@@ -18,12 +22,6 @@ title: 'The Lonesome Era | '
           <%= link_to 'Next Page', '1.html', :class => "pagination pagination__next" %>
         </div>  
       </div>  
-
-      <div>
-        <p class="center"><strong>The Lonesome Era</strong> is coming out this October from
-        <%= link_to "Iron Circus Comics!", "https://ironcircus.com/", :target => '_blank' %>
-        </p>
-      </div>
 
       <div class="button styled-button">
         <%= link_to 'More Comics', '/chapterindex.html'%>
