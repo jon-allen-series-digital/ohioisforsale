@@ -78,8 +78,14 @@ body {
 	position: relative;
 }
 .bg-inner-wrap {
-	padding: $page-margin;
+	/*background-color: blue;*/
+	background: white url('../images/shirts.jpg') no-repeat top center; 
+	/*padding: $page-margin;*/
 	margin-bottom: $page-margin * 2;
+	min-height: 480px;
+	display: inline-block;
+	width: 100vw;
+	margin-top: -40px;
 }
 .bg-img {
 	display: block;
@@ -95,15 +101,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-.bg-inner-wrap {
-	/*background: url('../images/banner-6-4-7.gif') no-repeat top center;*/
-	/*background-size: cover;*/
-	min-height: 480px;
-	display: block;
-	width: 100vw;
-	margin-top: -40px;
-
 }
 #main {
 	/*padding-top: 100px;*/
@@ -289,6 +286,20 @@ body {
 	/*border-radius: 4px;*/
 	text-align: center;
 }
+.centered-container {
+	display: block;
+	width: fit-content;
+	margin: 60px auto 0;
+	text-align: center;
+	background-color: black;
+	padding: $page-margin $page-margin*2;
+	h2 {
+		color: white;
+	}
+	.action-button a {
+		font-size: 24px;
+	}
+}
 .action-button {
 	margin: 0 auto;
 	display: inline-block;
@@ -296,7 +307,7 @@ body {
 .action-button a {
 	@include transition;
 	padding: .75rem 1rem;
-	display: block;
+	display: inline-block;
 	color: #000;
 	font-weight: bold;
 	background-color: $button-action;
