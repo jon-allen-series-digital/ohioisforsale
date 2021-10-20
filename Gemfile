@@ -10,7 +10,7 @@ gem "builder", "~> 3.0"
 
 gem 'middleman-deploy', '~> 1.0'
 
-gem 'middleman-search_engine_sitemap'
+gem 'middleman-search_engine_sitemap', '~> 1.3.0'
 
 gem "sprockets", ">= 2.12.5"
 gem "rack", ">= 1.6.11"
