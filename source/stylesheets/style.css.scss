@@ -64,7 +64,7 @@ $button-action: $color-yellow;
 ===========================================================*/
 
 body {
-	background-color: #eceef0;
+	/*background-color: #eceef0;*/
 	font: 100% $font-stack;
 	font-weight: 200;
 	font-size: 14px;
@@ -86,7 +86,22 @@ body {
 	min-height: 480px;
 	display: inline-block;
 	width: 100vw;
-	/*margin-top: -40px;*/
+	
+}
+.centered-container {
+	margin-top: -40px;
+	display: block;
+	width: 100vw;
+	/*margin: 60px auto 0;*/
+	text-align: center;
+	background-color: black;
+	padding: $page-margin 0;
+	h2 {
+		color: white;
+	}
+	.action-button a {
+		font-size: 24px;
+	}
 }
 .bg-img {
 	display: block;
@@ -145,7 +160,7 @@ body {
 }
 .page-wrap {
 	display: block;
-	padding: 0 $page-margin * 2;
+	padding: 0 $page-margin * 4;
 	margin:  auto;
 }
 .page-wrap.about {
@@ -203,19 +218,19 @@ body {
 }
 .link-card {
 	@include transition;
-	border-radius: 6px;
+	/*border-radius: 6px;*/
 	/*margin: 0 $page-margin*1.5 0 0 ;*/
 	height: 100%;
-	background-color: #fff;
-	border: 1px solid #cdcdcd;
+	/*background-color: #fff;*/
+	/*border: 1px solid #cdcdcd;*/
 	display: inline-block;
-	box-shadow: 2px 2px 6px #ededed;
+	/*box-shadow: 2px 2px 6px #ededed;*/
 	/*margin-bottom: -44px;*/
 	/*padding: 1rem;*/
 	/*margin: $page-margin / 2 0;*/
 	&:hover {
 		cursor: pointer;
-		box-shadow: 2px 2px 6px #cdcdcd;
+		/*box-shadow: 2px 2px 6px #cdcdcd;*/
 	}
 }
 .link-card a {
@@ -231,7 +246,7 @@ body {
 .img-resize {
 	height: 100%;
 	width: 100%;
-	border-radius: 4px 4px 0 0;
+	/*border-radius: 4px 4px 0 0;*/
 }
 .left {float: left;}
 .right {float: right;}
@@ -240,7 +255,7 @@ body {
 	clear: both;
 }
 .text-wrap {
-	padding: $page-margin;
+	padding: $page-margin 0;
 }
 
 .banner {
@@ -298,20 +313,6 @@ body {
 	background-color: black;
 	h4 {
 		color: $color-yellow;
-	}
-}
-.centered-container {
-	display: block;
-	width: fit-content;
-	margin: 60px auto 0;
-	text-align: center;
-	background-color: black;
-	padding: $page-margin $page-margin*2;
-	h2 {
-		color: white;
-	}
-	.action-button a {
-		font-size: 24px;
 	}
 }
 .action-button {
@@ -452,7 +453,7 @@ h1.left {
 	text-align: left;
 }
 h2 {
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	margin-bottom: 1rem;
 	font-weight: bold;
 }
@@ -471,7 +472,8 @@ h4 {
 	/*font-family: 'Roboto Slab', serif;*/
 }
 p {
-  margin-bottom: 1em;
+	font-size: 1.125rem;
+	margin-bottom: 1em;
 }
 .about p {
 	font-size: 18px;
@@ -831,6 +833,7 @@ nav li a:hover {
 	}	
 	.bg-inner-wrap { 
 		background-size: contain;
+		min-height: 340px;
 	}	
 }
 /*
@@ -909,16 +912,16 @@ nav li a:hover {
 		padding: .75rem;
 	}
 	.centered-container {
-		margin-top: 0;
+		/*margin-top: 0;*/
 		width: 100%;
 		padding: $page-margin 0;
+		margin-top: -20px;
 	}
 	.bg-inner-wrap {
 		padding: 0;
-		/*margin-top: -20px;*/
-		background: white url('../images/shirts-mobile.jpg') no-repeat top 136px center; 
+		background: white url('../images/shirts-mobile.jpg') no-repeat top center; 
 		background-size: cover;
-		min-height: 1326px;
+		min-height: 650px;
 	}
 	.bg-inner-wrap img {
 		display: none;
