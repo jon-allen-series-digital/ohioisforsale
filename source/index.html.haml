@@ -17,44 +17,53 @@ title: ''
 .page-wrap
 
 	.content-row	
-		.column
-			%h2 Graphic Novels
+		/ .column
+		/ 	%h2 Graphic Novels
 			
+		/ 	.link-card
+		/ 		= link_to "https://ironcircus.com/?product=julian-in-purgatory", :target=>'_blank' do
+		/ 			.img	
+		/ 				= image_tag '/images/julian-cover.jpg', :class=>'img-resize'
+
+		/ 			.text-wrap
+		/ 				%h2.strong Julian In Purgatory
+
+		/ 				%p Julian is going to change his life! Get off the couch, get a job, stop disappointing everyone he loves. But first: maybe a couple of pills?
+		/ 				%p Published in 2021 by Iron Circus.
+
+		.column
+			%h2 Check Out The Store
+				
 			.link-card
-				= link_to "https://ironcircus.com/?product=julian-in-purgatory", :target=>'_blank' do
+				= link_to "https://ohioisforsale.bigcartel.com/products", :target=>'_blank' do
 					.img	
-						= image_tag '/images/julian-cover.jpg', :class=>'img-resize'
+						= image_tag '/images/IMG_5490.gif', :class=>'img-resize'
 
 					.text-wrap
-						%h2.strong Julian In Purgatory
+						%p 
+							Check out my BigCartel store for books and individual issues of Ohio Is For Sale.
 
-						%p Julian is going to change his life! Get off the couch, get a job, stop disappointing everyone he loves. But first: maybe a couple of pills?
-						%p Published in 2021 by Iron Circus.
-
-		.column
+		.column					
 			%h2.mobile-hide &nbsp;
 			
 			.link-card
-				= link_to "https://ironcircus.com/?product=the-lonesome-era", :target=>'_blank' do
+				= link_to "https://ohioisforsale.bigcartel.com/product/the-lonesome-era", :target=>'_blank' do
 					.img	
 						= image_tag '/images/img_5054.jpg', :class=>'img-resize'
 
 					.text-wrap
-						%h2.strong The Lonesome Era
-
-						%p Camden is crushing hard on his best buddy and all-around bad influence, Jeremiah. Young, bored, and trapped in a decomposing Rust Belt town, he goes along with every awful idea, every hair-brained plan, and every threat to life and limb Jeremiah can come up with. But how much longer can this go on?
-						%p Published in 2019 by Iron Circus.
+						%h2.strong &nbsp;
 					
-		.column
-			%h2 Read Some Stuff For Free
+		/ .column
+		/ 	%h2 Read Some Stuff For Free
 			
-			.link-card
-				= link_to '/chapterindex.html' do			
-					.img
-						= image_tag '/images/julianbytheriver.png', :class=>'img-resize'
+		/ 	.link-card
+		/ 		= link_to '/chapterindex.html' do			
+		/ 			.img
+		/ 				= image_tag '/images/julianbytheriver.png', :class=>'img-resize'
 
-					.text-wrap
-						%p Read the first issue of Ohio Is Sale, a sample chapter of the latest book, and more.
+		/ 			.text-wrap
+		/ 				%p Read the first issue of Ohio Is Sale, a sample chapter of the latest book, and more.
 
 		/ .column
 		/ 	%h2.mobile-hide &nbsp;
@@ -73,20 +82,7 @@ title: ''
 
 
 
-	.content-row
-
-		.column
-			%h2 Check Out The Store
-				
-			.link-card
-				= link_to "https://ohioisforsale.bigcartel.com/products", :target=>'_blank' do
-					.img	
-						= image_tag '/images/IMG_5490.gif', :class=>'img-resize'
-
-					.text-wrap
-						%p 
-							Check out my BigCartel store for books and individual issues of Ohio Is For Sale.
-
+	
 
 
 
@@ -102,18 +98,18 @@ title: ''
 						%p Follow me on Instagram to see sketches, new comics, and lots of other dumb stuff.				
 		
 	
-		.column
-			%h2 About This Comic
+		/ .column
+		/ 	%h2 About This Comic
 			
-			.link-card
-				= link_to "/about.html" do
-					.img	
-						= image_tag '/images/cover-large-1.gif', :class=>'img-resize'
+		/ 	.link-card
+		/ 		= link_to "/about.html" do
+		/ 			.img	
+		/ 				= image_tag '/images/cover-large-1.gif', :class=>'img-resize'
 
-					.text-wrap
-						%h2.strong About Ohio Is For Sale
+		/ 			.text-wrap
+		/ 				%h2.strong About Ohio Is For Sale
 
-						%p An overview of what this is all about, plus character bios.
+		/ 				%p An overview of what this is all about, plus character bios.
 
 		/ .column.column-double
 		/ 	%h2.mobile-hide &nbsp;
