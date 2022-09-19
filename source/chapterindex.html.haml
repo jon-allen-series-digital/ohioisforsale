@@ -41,12 +41,34 @@ title: 'Index | '
 		.column
 			
 			.link-card					
+				= link_to 'chapter-one/index.html' do	
+					.img
+						= image_tag '/images/cover-large-1.gif', :class => 'img-resize'
+					.text-wrap		
+						%h2.strong Issue #1
+						%p Self published in 2012.	
+
+		.column
+			
+			.link-card					
+				= link_to 'chapter-two/index.html' do	
+					.img
+						= image_tag '/images/cover-large-2.jpg', :class => 'img-resize'
+					.text-wrap		
+						%h2.strong Issue #2
+						%p Self published in 2013.							
+
+		.column				
+
+			.link-card					
 				= link_to 'chapter-nine/index.html' do	
 					.img
 						= image_tag '/images/cover-large-9.jpg', :class => 'img-resize'
 					.text-wrap		
 						%h2.strong Issue #9
 						%p Self published in 2016.	
+
+	.content-row						
 
 		.column
 			.link-card

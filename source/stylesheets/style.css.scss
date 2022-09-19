@@ -1,6 +1,6 @@
 @import "reset";
 
-$primary-color: #efeee6;
+$primary-color: #000;
 $font-stack: 'Helvetica', sans-serif;
 $header-height: 60px;
 $page-margin: 1.25rem;
@@ -64,7 +64,7 @@ $button-action: $color-yellow;
 ===========================================================*/
 
 body {
-	/*background-color: #eceef0;*/
+	background-color: #eceef0;
 	font: 100% $font-stack;
 	font-weight: 200;
 	font-size: 14px;
@@ -140,7 +140,7 @@ body {
 	display: flex;
 	align-items: stretch;
 	clear: both;
-	margin-bottom: $page-margin * 2;
+	margin-bottom: $page-margin * 1.5;
 }
 .outer-wrap {
 	position: relative;
@@ -218,19 +218,19 @@ body {
 }
 .link-card {
 	@include transition;
-	/*border-radius: 6px;*/
+	border-radius: 6px;
 	/*margin: 0 $page-margin*1.5 0 0 ;*/
 	height: 100%;
-	/*background-color: #fff;*/
+	background-color: #fff;
 	/*border: 1px solid #cdcdcd;*/
 	display: inline-block;
 	/*box-shadow: 2px 2px 6px #ededed;*/
 	/*margin-bottom: -44px;*/
-	/*padding: 1rem;*/
+	padding: 1rem;
 	/*margin: $page-margin / 2 0;*/
 	&:hover {
 		cursor: pointer;
-		/*box-shadow: 2px 2px 6px #cdcdcd;*/
+		box-shadow: 2px 2px 6px #ababab;
 	}
 }
 .link-card a {
@@ -285,9 +285,10 @@ body {
 }
 .buttons {
 	max-width: 600px;
-	margin: 0 auto;
+	margin: 48px auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	column-gap: 24px;
 }
 .button a {
 	@include transition;
@@ -316,7 +317,7 @@ body {
 	}
 }
 .action-button {
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	display: inline-block;
 }
 .action-button a {
@@ -326,21 +327,24 @@ body {
 	color: #000;
 	font-weight: bold;
 	background-color: $button-action;
+	border: 1px solid $button-action;
 	&:hover {
 		background-color: black;
 		color: $button-action;
 	}
 }
 .styled-button {
-	display: inline-block;	
-	margin-top: $page-margin;
+	/*display: inline-block;	*/
+	/*margin-top: $page-margin;*/
 	border: 1px solid $primary-color;
 }
 .styled-button a {
+	font-weight: bold;
 	display: block;
 	padding: .75rem 1rem;
 	&:hover {
 		background-color: $primary-color;
+		color: $button-action;
 	}
 }
 .full-width { width: 100%; }
@@ -472,7 +476,7 @@ h4 {
 	/*font-family: 'Roboto Slab', serif;*/
 }
 p {
-	font-size: 1.125rem;
+	font-size: 1rem;
 	margin-bottom: 1em;
 }
 .about p {
@@ -499,7 +503,7 @@ p {
   font-weight: 800;
 }
 a {
-	color: #666;
+	color: #000;
 	text-decoration: none;
 }
 .center {
