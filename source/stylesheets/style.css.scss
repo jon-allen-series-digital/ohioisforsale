@@ -160,7 +160,7 @@ body {
 }
 .page-wrap {
 	display: block;
-	padding: 0 $page-margin * 4;
+	padding: 0 $page-margin * 10;
 	margin:  auto;
 }
 .page-wrap.about {
@@ -218,20 +218,24 @@ body {
 }
 .link-card {
 	@include transition;
-	border-radius: 6px;
+	/*border-radius: 6px;*/
 	/*margin: 0 $page-margin*1.5 0 0 ;*/
 	height: 100%;
-	background-color: #fff;
+	/*background-color: #fff;*/
 	/*border: 1px solid #cdcdcd;*/
 	display: inline-block;
 	/*box-shadow: 2px 2px 6px #ededed;*/
 	/*margin-bottom: -44px;*/
-	padding: 1rem;
+	/*padding: 1rem;*/
 	/*margin: $page-margin / 2 0;*/
-	&:hover {
-		cursor: pointer;
-		box-shadow: 2px 2px 6px #ababab;
-	}
+}
+.link-card img {
+	border-radius: 3px;
+	@include transition;
+}
+.link-card:hover img{
+	cursor: pointer;
+	box-shadow: 2px 2px 6px #ababab;
 }
 .link-card a {
 	width: 100%;
