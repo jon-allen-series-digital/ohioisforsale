@@ -64,7 +64,7 @@ $button-action: $color-yellow;
 ===========================================================*/
 
 body {
-	background-color: #eceef0;
+	background-color: #fff;
 	font: 100% $font-stack;
 	font-weight: 200;
 	font-size: 14px;
@@ -79,7 +79,7 @@ body {
 }
 .bg-inner-wrap {
 	/*background-color: blue;*/
-	background: white url('../images/shirts.jpg') no-repeat center; 
+	background: white url('../images/banner-6-4-7.gif') no-repeat center; 
 	background-size: cover;
 	/*padding: $page-margin;*/
 	margin-bottom: $page-margin * 2;
@@ -165,11 +165,11 @@ body {
 }
 .page-wrap.about {
 	max-width: 48%;
-	margin: 0 auto;
+	margin: 100px auto;
 }
 .top {
 	display: block;
-	height: 100px;
+	/*height: 100px;*/
 }
 .column {
 	margin: 0 2% 0 0;
@@ -375,6 +375,9 @@ body {
 	background-color: #fff;
 	z-index: 1;
 }
+#header-wrap {
+	padding: 0 $page-margin;
+}
 .header-push {
 	height: 60px;
 }
@@ -461,7 +464,7 @@ h1.left {
 	text-align: left;
 }
 h2 {
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	margin-bottom: 1rem;
 	font-weight: bold;
 }
@@ -837,10 +840,10 @@ nav li a:hover {
 	}
 	.page-wrap.about {
 		max-width: 80%;
-		margin: 0 auto;
+		margin: 72px auto;
 	}	
 	.bg-inner-wrap { 
-		background-size: contain;
+		/*background-size: contain;*/
 		min-height: 340px;
 	}	
 }
@@ -861,7 +864,7 @@ nav li a:hover {
 		height: 50px;
 	}
 	.top {
-		height: 72px;
+		/*height: 72px;*/
 	}
 	.banner-promotion {
 		margin-top: -22px;
@@ -927,9 +930,9 @@ nav li a:hover {
 	}
 	.bg-inner-wrap {
 		padding: 0;
-		background: white url('../images/shirts-mobile.jpg') no-repeat top center; 
+		/*background: white url('../images/shirts-mobile.jpg') no-repeat top center; */
 		background-size: cover;
-		min-height: 650px;
+		/*min-height: 650px;*/
 	}
 	.bg-inner-wrap img {
 		display: none;
