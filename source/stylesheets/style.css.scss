@@ -160,7 +160,7 @@ body {
 }
 .page-wrap {
 	display: block;
-	padding: 0 $page-margin * 10;
+	padding: 0 $page-margin * 8;
 	margin:  auto;
 }
 .page-wrap.about {
@@ -913,7 +913,7 @@ nav li a:hover {
 	}	
 	.page-wrap.about {
 		max-width: 100%;
-		margin: 0 auto;
+		margin: 72px auto;
 	}	
 /*	.text-wrap {
 		padding: 0;
